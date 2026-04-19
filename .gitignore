@@ -25,3 +25,6 @@ Thumbs.db
 *.sqlite3
 sql/database/
 
+
+# ignroe the pdf files 
+*.pdf
