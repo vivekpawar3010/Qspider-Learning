@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Stats Tester</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            margin-top: 50px; 
+            background-color: #f4f4f9; 
+        }
+        .card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            width: 300px; 
+            text-align: center; 
+        }
+        input { 
+            padding: 8px; 
+            width: 80%; 
+            margin-bottom: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+        }
+        button { 
+            padding: 8px 16px; 
+            background: #ffa116; /* LeetCode Orange */
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-weight: bold;
+        }
+        button:hover { 
+            background: #e58f14; 
+        }
+        .stats { 
+            margin-top: 20px; 
+            text-align: left; 
+            display: none; 
+        }
+        .stat-item { 
+            margin: 8px 0; 
+            font-weight: bold; 
+            font-size: 16px;
+        }
+        .error { 
+            color: red; 
+            margin-top: 10px; 
+            display: none; 
+        }
+        .status {
+            margin-top: 10px;
+            color: #555;
+            min-height: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>LeetCode Stats</h2>
+    <input type="text" id="username" value="vivekpawar3010" placeholder="Enter LeetCode Username">
+    <button id="fetchBtn" type="button">Get Profile</button>
+
+    <div id="status" class="status" aria-live="polite"></div>
+    <div id="error" class="error" role="alert">User not found or API error.</div>
+
+    <div id="stats" class="stats">
+        <div class="stat-item">Total Solved: <span id="total">0</span></div>
+        <div class="stat-item" style="color: #00b8a3;">Easy: <span id="easy">0</span></div>
+        <div class="stat-item" style="color: #ffc01e;">Medium: <span id="medium">0</span></div>
+        <div class="stat-item" style="color: #ef4743;">Hard: <span id="hard">0</span></div>
+    </div>
+</div>
+
+<script>
+    const endpoints = [
+        (user) => `https://leetcode-stats-api.herokuapp.com/${encodeURIComponent(user)}`,
+        (user) => `https://leetscan.vercel.app/${encodeURIComponent(user)}`,
+    ];
+
+    const usernameInput = document.getElementById('username');
+    const fetchBtn = document.getElementById('fetchBtn');
+    const statsDiv = document.getElementById('stats');
+    const errorDiv = document.getElementById('error');
+    const statusDiv = document.getElementById('status');
+
+    async function fetchJson(url, timeoutMs = 10000) {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+        try {
+            const response = await fetch(url, {
+                signal: controller.signal,
+                cache: 'no-store',
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+
+            return await response.json();
+        } finally {
+            clearTimeout(timeoutId);
+        }
+    }
+
+    function showError(message) {
+        errorDiv.textContent = message;
+        errorDiv.style.display = 'block';
+    }
+
+    async function fetchStats() {
+        const username = usernameInput.value.trim();
+
+        // Reset UI
+        statsDiv.style.display = 'none';
+        errorDiv.style.display = 'none';
+        statusDiv.textContent = '';
+
+        if (!username) {
+            showError('Please enter a username.');
+            return;
+        }
+
+        fetchBtn.disabled = true;
+        fetchBtn.textContent = 'Loading...';
+        statusDiv.textContent = 'Fetching profile...';
+
+        let lastError = null;
+
+        for (const buildUrl of endpoints) {
+            const url = buildUrl(username);
+
+            try {
+                const data = await fetchJson(url);
+
+                if (data.status && data.status !== 'success') {
+                    throw new Error(data.message || 'API error');
+                }
+
+                if (typeof data.totalSolved !== 'number') {
+                    throw new Error('Unexpected response shape');
+                }
+
+                document.getElementById('total').innerText = data.totalSolved ?? 0;
+                document.getElementById('easy').innerText = data.easySolved ?? 0;
+                document.getElementById('medium').innerText = data.mediumSolved ?? 0;
+                document.getElementById('hard').innerText = data.hardSolved ?? 0;
+
+                statsDiv.style.display = 'block';
+                statusDiv.textContent = '';
+                return;
+            } catch (error) {
+                lastError = error;
+            }
+        }
+
+        console.error('Failed to fetch data:', lastError);
+        showError('User not found or API error. Please try again later.');
+        statusDiv.textContent = '';
+    }
+
+    fetchBtn.addEventListener('click', fetchStats);
+    usernameInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            fetchStats();
+        }
+    });
+</script>
+
+</body>
+</html>

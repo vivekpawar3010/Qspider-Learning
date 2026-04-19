@@ -1,0 +1,20 @@
+class TwoptrPalindrom
+{
+	public static void main(String[] args) 
+	{
+		String str = new java.util.Scanner(System.in).nextLine();
+		boolean assum = true;
+		
+		for(int i = 0, j = str.length(); i < str.length()/2; i++, j--){
+			char ch1 = str.charAt(i);
+			char ch2 = str.charAt(j);
+			if(ch1 != ch2){
+				assum = false;
+				break;
+			}
+		}
+		if(assum) System.out.println(str + " Palindrome");
+		else System.out.println(str + " Not Palindrome");
+
+	}
+}
