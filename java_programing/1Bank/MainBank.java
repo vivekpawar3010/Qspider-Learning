@@ -1,12 +1,19 @@
+import java.util.Scanner;
+
 public class MainBank {
     static double balance;
+    static int[] accNum = new int[1000];
 
     public static void main(String[] args) {
-        checkBalance();
-        withdraw(1000);
-        deposit(10000);
-        withdraw(1000);
-        checkBalance();
+        System.out.println("------------------------- Welcome to King Bank ---------------------");
+        Scanner sc = new Scanner(System.in);
+
+        for (;;) {
+            System.out.println("Give me the Your Choise");
+            
+            int choise = sc.nextInt();
+
+        }
     }
 
     public static void checkBalance() {

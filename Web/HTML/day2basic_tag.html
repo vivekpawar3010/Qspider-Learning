@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Day 2: Basic HTML Tags</title>
     <style>
         div{
             border: 1px solid black;
@@ -13,155 +13,194 @@
 </head>
 <body>
     <div id="video">
-        <h1>Video tag</h1>
-    <video src="./resources/videos/video.mp4" 
-    height="300px" 
-    controls 
-    autoplay
-    muted 
-    loop 
-    poster="./resources\images\image1.png"
-    ></video>
-
-    <ol >
-        <li><b>src:</b> <i>-Here we add the video source </i> <br><i>- that video can preset at local dir or online link </i></li>
-        <li><b>height & widht-</b> <i></i></li>
-        <li><b>controls-</b> <i></i></li> 
-        <li><b>autoplay-</b> <i></i></li>
-        <li><b>muted-</b> <i></i></li>
-        <li><b>loop-</b> <i></i></li>   
-        <li><b>poster-</b> <i></i></li>
-    </ol>
+        <h1>Video Tag</h1>
+        <dl>
+            <dt>Definition</dt>
+            <dd>The &lt;video&gt; tag is used to embed video content in an HTML document. It supports various attributes to control playback, appearance, and behavior. Videos can be in formats like MP4, WebM, or OGV.</dd>
+            <dt>src</dt>
+            <dd>Specifies the source URL of the video file. It can be a local path or an online link. Multiple &lt;source&gt; tags can be used for different formats.</dd>
+            <dt>height & width</dt>
+            <dd>Control the dimensions of the video player in pixels or percentages.</dd>
+            <dt>controls</dt>
+            <dd>Adds playback controls like play, pause, volume, and progress bar to the video player.</dd>
+            <dt>autoplay</dt>
+            <dd>Automatically starts playing the video when the page loads. Note: Many browsers block autoplay without user interaction.</dd>
+            <dt>muted</dt>
+            <dd>Starts the video with sound muted. Useful with autoplay to avoid browser restrictions.</dd>
+            <dt>loop</dt>
+            <dd>Restarts the video automatically after it finishes playing.</dd>
+            <dt>poster</dt>
+            <dd>Displays a placeholder image while the video is loading or before playback starts.</dd>
+            <dt>preload</dt>
+            <dd>Specifies how the video should be loaded: "none" (no preload), "metadata" (load metadata only), "auto" (load entire video).</dd>
+        </dl>
+        <h2>Example</h2>
+        <video src="/Web/resources/videos/video.mp4" height="300px" controls autoplay muted loop poster="/Web/resources/images/image1.png"></video>
     </div>
+
     <div id="embedding">
-
-        <h1>Embedding Website </h1>
-        <ol>
-            <li><b>-</b> <i></i></li>
-            <li><b>-</b> <i></i></li>
-            <li><b>-</b> <i></i></li>
-            <li><b>-</b> <i></i></li>
-        
-        
-        </ol>
-        <video src="https://youtu.be/6MYVWdoeW2A?si=nr0_YBcFduKR2OKo" muted autoplay controls></video>
-
+        <h1>Embedding Websites</h1>
+        <dl>
+            <dt>Definition</dt>
+            <dd>Embedding allows you to include external content like videos, maps, or other websites directly into your HTML page using the &lt;iframe&gt; tag. This creates an inline frame within your document.</dd>
+            <dt>src</dt>
+            <dd>Specifies the URL of the content to embed, such as a YouTube video or Google Maps.</dd>
+            <dt>width & height</dt>
+            <dd>Define the dimensions of the embedded content in pixels.</dd>
+            <dt>frameborder</dt>
+            <dd>Controls whether a border is displayed around the iframe. Value "0" removes the border.</dd>
+            <dt>allow</dt>
+            <dd>Specifies permissions for the embedded content, such as "accelerometer", "autoplay", "fullscreen", etc.</dd>
+            <dt>allowfullscreen</dt>
+            <dd>Allows the embedded content to be displayed in fullscreen mode when supported.</dd>
+            <dt>title</dt>
+            <dd>Provides a title for the iframe, improving accessibility for screen readers.</dd>
+            <dt>loading</dt>
+            <dd>Controls when the iframe content loads: "lazy" (load when needed) or "eager" (load immediately).</dd>
+        </dl>
+        <h2>Examples</h2>
+        <h3>YouTube Video</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6MYVWdoeW2A?si=O_zNGHwxWu5DQxuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+        <h3>Google Maps</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36277.27209518978!2d73.8541046957358!3d18.51977343030172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c079d4c6d387%3A0x2ef12f3e384c82a!2sQspiders%20Pune%20Deccan%20Gymkhana!5e0!3m2!1sen!2sin!4v1778040067930!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        
     </div>
+
     <div id="audio">
         <h1>Audio Tag</h1>
-    <ol >
-        <li><b>src:</b> <i>-Here we add the video source </i> <br><i>- that video can preset at local dir or online link </i></li>
-        <li><b>height & widht-</b> <i></i></li>
-        <li><b>controls-</b> <i></i></li> 
-        <li><b>autoplay-</b> <i></i></li>
-        <li><b>muted-</b> <i></i></li>
-        <li><b>loop-</b> <i></i></li>   
-        <li><b>poster-</b> <i></i></li>
-    </ol>
+        <dl>
+            <dt>Definition</dt>
+            <dd>The &lt;audio&gt; tag is used to embed audio content in an HTML document. It supports various attributes to control playback and appearance. Audio files can be in formats like MP3, WAV, or OGG.</dd>
+            <dt>src</dt>
+            <dd>Specifies the source URL of the audio file. It can be a local path or an online link. Multiple &lt;source&gt; tags can be used for different formats.</dd>
+            <dt>controls</dt>
+            <dd>Adds playback controls like play, pause, and volume to the audio player.</dd>
+            <dt>autoplay</dt>
+            <dd>Automatically starts playing the audio when the page loads. Note: Many browsers block autoplay.</dd>
+            <dt>muted</dt>
+            <dd>Starts the audio with sound muted.</dd>
+            <dt>loop</dt>
+            <dd>Restarts the audio automatically after it finishes.</dd>
+            <dt>preload</dt>
+            <dd>Specifies how the audio should be loaded: "none", "metadata", or "auto".</dd>
+            <dt>volume</dt>
+            <dd>Sets the initial volume level (0.0 to 1.0), though it's not widely supported.</dd>
+        </dl>
+        <h2>Example</h2>
+        <audio src="/Web/resources/audios/audio.mp3" controls autoplay muted loop></audio>
     </div>
 
     <div id="elements">
         <h1>Elements</h1>
-            <li><b>Def-</b> <i>HTML elements are the building blocks of the web pages.</i><br><i>-  It si the combination of the opening tag, closing tag and contes</i></li>
-
+        <dl>
+            <dt>Definition</dt>
+            <dd>HTML elements are the building blocks of web pages. They consist of an opening tag, content, and a closing tag. Elements can be block-level or inline.</dd>
+        </dl>
         <h2>Block Elements</h2>
-            <li><b>-</b> <i>It always start on the new line. They take up all the widht provides</i></li>
-            <li><b>-eg</b> <i>h1-h6, div, ol, ul, p, etc.</i></li>
-
-
+        <dl>
+            <dt>Definition</dt>
+            <dd>Block elements always start on a new line and take up the full width available. They create a "block" of content.</dd>
+            <dt>Examples</dt>
+            <dd>&lt;h1&gt;-&lt;h6&gt; (headings), &lt;div&gt; (division), &lt;p&gt; (paragraph), &lt;ol&gt; (ordered list), &lt;ul&gt; (unordered list), &lt;table&gt; (table), etc.</dd>
+            <dt>Characteristics</dt>
+            <dd>They stack vertically, can contain other block or inline elements, and have default margins/padding.</dd>
+        </dl>
         <h2>Inline Elements</h2>
-            <li><b>-</b> <i>All formating types are inline elements 
-                <br> - eg. </i>
-                </li>
-            <li><b>-</b> <i></i></li>
-
-
+        <dl>
+            <dt>Definition</dt>
+            <dd>Inline elements do not start on a new line and only take up as much width as necessary. They flow within the text.</dd>
+            <dt>Examples</dt>
+            <dd>&lt;span&gt; (generic inline container), &lt;a&gt; (anchor/link), &lt;strong&gt; (strong emphasis), &lt;em&gt; (emphasis), &lt;img&gt; (image), &lt;br&gt; (line break), etc.</dd>
+            <dt>Characteristics</dt>
+            <dd>They appear in the flow of text, cannot contain block elements, and respect text formatting.</dd>
+        </dl>
     </div>
 
     <div id="attributes">
         <h1>Attributes</h1>
-        <li> <b>Giving the additional inforamtion about the tag. <br>They <i>Are always placed inside the opening tag </i> <br> <i>It most of time come with the key value pair. <br> eg. height = "100px"</i></b>
-        </li>
-        <li><i>- used give the properties to the tags/elements</i></li>
-
-        <b>There is 2 Types of Attribues</b>
-        <h2>Core/Global Attributes</h2>
-        <li>The attribute that can be used in <b>Any</b> html elements</li>
-        <b>Some core elements</b>
-        <ul>
-            <li>id & class :- <i>used to add the identifire or cerate group of the elements for styling</i></li>
-            <li>style :- <i>To add the diff styles to a single tag.</i></li>
-            <li>title :- <i>used to add the tooltip to any element a samll info show when hover in websit.e</i></li>
-            <li>height & widht :- <i>Used to add specific area it cover or it's height and widht.</i></li>
-            <li>hidden :- <i>It is a boolean attribute which hides the element form the view.</i></li>
-            <li>lang :- <i>It specifies the lang that tag contain</i></l>
-        </ul>
-        <h2>Element Specific/Specific Attributes</h2>
-
-        <li>The attributes which are used in the <b>specific elements</b></li>
-        <b>Some Element Specific elements  </b>
-        <ul>
-            <li>herf :- <i>used for anchor tag to specify the destination URL</i></li>
-            <li>src :- <i>used with the image,script, etc. to specify the source path</i></li>
-            <li>alt :- <i>used to alternative info of diff tags</i></li>
-            <li>type :- <i>In the Input tag it specify the input type</i></li>
-            <li>value :- <i>Set the defaul value in the inputs  </i></li>
-            <li>target :- <i>used to spcify the link opening destination</i></li>
-        </ul>
-
+        <dl>
+            <dt>Definition</dt>
+            <dd>Attributes provide additional information about HTML elements. They are always placed inside the opening tag and usually come in key-value pairs, e.g., height="100px". Attributes modify the behavior or appearance of elements.</dd>
+            <dt>Purpose</dt>
+            <dd>Used to give properties to tags/elements, control functionality, styling, and accessibility.</dd>
+        </dl>
+        <h2>Types of Attributes</h2>
+        <h3>Core/Global Attributes</h3>
+        <p>Attributes that can be used in <strong>any</strong> HTML element.</p>
+        <dl>
+            <dt>id</dt>
+            <dd>Provides a unique identifier for an element, used for styling, scripting, and linking.</dd>
+            <dt>class</dt>
+            <dd>Assigns one or more class names to an element for styling and grouping.</dd>
+            <dt>style</dt>
+            <dd>Applies inline CSS styles directly to an element.</dd>
+            <dt>title</dt>
+            <dd>Provides additional information displayed as a tooltip on hover.</dd>
+            <dt>height & width</dt>
+            <dd>Specify the dimensions of the element (for applicable elements like images, videos).</dd>
+            <dt>hidden</dt>
+            <dd>A boolean attribute that hides the element from view.</dd>
+            <dt>lang</dt>
+            <dd>Specifies the language of the element's content for accessibility and styling.</dd>
+            <dt>tabindex</dt>
+            <dd>Controls the tab order for keyboard navigation.</dd>
+            <dt>contenteditable</dt>
+            <dd>Makes the element's content editable by the user.</dd>
+        </dl>
+        <h3>Element-Specific Attributes</h3>
+        <p>Attributes that are used only with <strong>specific elements</strong>.</p>
+        <dl>
+            <dt>href</dt>
+            <dd>Used with &lt;a&gt; tags to specify the destination URL of a link.</dd>
+            <dt>src</dt>
+            <dd>Used with media elements like &lt;img&gt;, &lt;video&gt;, &lt;audio&gt; to specify the source path.</dd>
+            <dt>alt</dt>
+            <dd>Provides alternative text for &lt;img&gt; elements if the image fails to load.</dd>
+            <dt>type</dt>
+            <dd>In &lt;input&gt; tags, specifies the input type (e.g., text, password, email).</dd>
+            <dt>value</dt>
+            <dd>Sets the default value in form inputs or the value of buttons.</dd>
+            <dt>target</dt>
+            <dd>Used with &lt;a&gt; tags to specify where to open the linked document.</dd>
+            <dt>placeholder</dt>
+            <dd>Provides hint text in input fields that disappears when typing.</dd>
+            <dt>required</dt>
+            <dd>Makes a form field mandatory for submission.</dd>
+        </dl>
     </div>
 
     <div id="anchor">
         <h1>Anchor Tag</h1>
-        <ol>
-            <li><b>Def-</b> <i>Anchor tag is used to create the link in the web page.</i></li>
-            <li><b>herf-</b> <i>used to specify the destination URL of the link. It can be an absolute URL (linking to an external website) or a relative URL (linking to another page within the same website).</i></li>
-            <li><b>target-</b> <i>used to specify where to open the linked document. Common values include "_blank" (opens in a new tab), "_self" (opens in the same tab), "_parent" (opens in the parent frame), and "_top" (opens in the full body of the window).</i></li>
-            <li><b>title-</b> <i>used to provide additional information about the link, which is typically displayed as a tooltip when the user hovers over the link.</i></li>
-            <li><b>rel-</b> <i>used to specify the relationship between the current document and the linked document. Common values include "noopener" and "noreferrer" for security purposes when using target="_blank".</i></li>
-            <li><b>tel-</b> <i>used to specify the telephone number for the link.</i></li>
-
-        </ol>
-        <b>1. Basic Anchor Tag- Used to create links in the web page.Navigate one page to another webpage</b>
-        <a href="https://google.com">GO to Google</a>
-        <br>
-        <a href="https://www.leetcode.com" target="_blank">Go to leetcode on next page </a> <br>
-
-        <b>2.Navigation on Same Page Diff Parts only use ids.</b>
-        <a href="#video">Go to Video Tag Info</a> <br>
-        <a href="#embedding">Go to Embedding Tag Info</a> <br>
-        <a href="#audio">Go to Audio Tag Info</a> <br>
-        <a href="#elements">Go to Elements Tag Info</a> <br>
-        <a href="#attributes">Go to AttributesVideo Tag Info</a> <br>
-        <a href="#anchor">Go to Anchor Tag Info</a> <br>
-
-        <b>3. Telephone Links</b> <br>
-        <a href="tel:+1234567890">Call Us</a>
-        <br>
-
-        <b>4. Whats app link</b> <br>
-        <a href="https://wa.me/1234567890">Chat on WhatsApp</a>
-        <br>
-        <a href="https://wa.me/9890528006?text=Hello%20there!">Chat on WhatsApp with the specific message</a> <br>
-
-        <b>5. Email Links</b> <br>
-        <a href="mailto:example@gmail.com">Send Email</a> <br>
-        <a href="mailto:example@example.com?subject=Hello&body=This is a test email.">To send email with the specific message/subeject</a>
-        <br>
-
-        <b>6. Making image as hyperlink with the <code>&lt;img&gt;</code> tag </b> <br>
-        <a href="https://www.google.com" target="_blank">
-            <img src="./resources/images/image1.png" alt="Google Logo" width="100px">
-        </a>
-        <br>
-
-
+        <dl>
+            <dt>Definition</dt>
+            <dd>The &lt;a&gt; tag, or anchor tag, is used to create hyperlinks in web pages. It allows navigation between pages or sections.</dd>
+            <dt>href</dt>
+            <dd>Specifies the destination URL of the link. Can be absolute (external site) or relative (within the same site).</dd>
+            <dt>target</dt>
+            <dd>Specifies where to open the linked document. Values: "_blank" (new tab), "_self" (same tab), "_parent", "_top".</dd>
+            <dt>title</dt>
+            <dd>Provides additional information about the link, displayed as a tooltip on hover.</dd>
+            <dt>rel</dt>
+            <dd>Specifies the relationship between the current document and the linked document. Values like "noopener", "noreferrer" for security.</dd>
+            <dt>download</dt>
+            <dd>Causes the browser to download the linked resource instead of navigating to it.</dd>
+        </dl>
+        <h2>Examples</h2>
+        <h3>1. Basic Link</h3>
+        <p><a href="https://google.com">Go to Google</a></p>
+        <h3>2. Link Opening in New Tab</h3>
+        <p><a href="https://www.leetcode.com" target="_blank">Go to LeetCode</a></p>
+        <h3>3. Same Page Navigation</h3>
+        <p><a href="#video">Go to Video Section</a> | <a href="#audio">Go to Audio Section</a></p>
+        <h3>4. Telephone Link</h3>
+        <p><a href="tel:+1234567890">Call Us</a></p>
+        <h3>5. WhatsApp Link</h3>
+        <p><a href="https://wa.me/1234567890">Chat on WhatsApp</a></p>
+        <p><a href="https://wa.me/9890528006?text=Hello%20there!">Chat with Message</a></p>
+        <h3>6. Email Link</h3>
+        <p><a href="mailto:example@gmail.com">Send Email</a></p>
+        <p><a href="mailto:example@example.com?subject=Hello&body=Test">Email with Subject</a></p>
+        <h3>7. Image as Link</h3>
+        <p><a href="https://www.google.com" target="_blank"><img src="/Web/resources/images/view.png" alt="Google Logo" width="100px"></a></p>
     </div>
-
 </body>
 </html>
