@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - Semantic Tags</title> 
+    
+</head>
+<body>
+    <!-- SEMANTIC TAGS EXPLANATION -->
+    <h1>Semantic Tags</h1>
+    <dl>
+        <dt>Definition:</dt>
+        <dd>Semantic HTML tags provide meaning to the content they wrap. They tell both browsers and developers the significance of the content.</dd>
+        
+        <dt>Advantages of Use:</dt>
+        <dd>✓ Improved SEO - Search engines better understand page content</dd>
+        <dd>✓ Better Accessibility - Screen readers can interpret content structure</dd>
+        <dd>✓ Easier Maintenance - Code intent is clear to developers</dd>
+        <dd>✓ Better Code Organization - Logical structure is evident</dd>
+        <dd>✓ Mobile Friendly - Proper semantics help responsive design</dd>
+    </dl>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Header Tag (&lt;header&gt;)</h1>
+        <p>What it contains: Introductory content, navigation, logo, and branding information</p>
+        <p>When to use: At the top of pages or sections to group heading, logo, and navigation</p>
+        <p>Example usage: Company logo, main navigation menu, search bar</p>
+        <p>Semantic benefit: Search engines know this is important introductory content</p>
+    </header>
+
+    <!-- MAIN CONTENT SECTION -->
+    <main>
+        <h1>Main Tag (&lt;main&gt;)</h1>
+        <p>What it contains: The primary content of the document</p>
+        <p>Important rule: Should appear only ONCE per page</p>
+        <p>When to use: Wrap all the main content excluding header, footer, and sidebars</p>
+        <p>Example usage: Blog post, article content, product details</p>
+        <p>Semantic benefit: Screen readers and search engines identify the main content area immediately</p>
+
+        <!-- SECTION TAG -->
+        <section>
+            <h1>Section Tag (&lt;section&gt;)</h1>
+            <p>What it contains: Thematically related content grouped together</p>
+            <p>How it works: Used to organize page content into logical sections</p>
+            <p>When to use: When you have related content that belongs in one block (like chapters, tabs, or content groupings)</p>
+            <p>Example usage: "Introduction section", "Features section", "Testimonials section"</p>
+            <p>Semantic benefit: Clearly marks different topics or areas within your main content</p>
+        </section>
+
+        <!-- ARTICLE TAG -->
+        <article>
+            <h1>Article Tag (&lt;article&gt;)</h1>
+            <p>What it contains: Self-contained, independent content that could stand alone</p>
+            <p>Key characteristic: Should be independently distributable and reusable</p>
+            <p>When to use: Blog posts, news articles, forum posts, user comments, product reviews</p>
+            <p>Example usage: Blog post, news story, review, podcast episode description</p>
+            <p>Can be nested: Articles can contain sections, and sections can contain articles</p>
+            <p>Semantic benefit: Search engines and readers know this is complete, standalone content</p>
+        </article>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <h1>Footer Tag (&lt;footer&gt;)</h1>
+        <p>What it contains: Footer metadata, copyright, links, and contact information</p>
+        <p>When to use: At the bottom of pages or sections to group ending content</p>
+        <p>Example usage: Copyright notice, contact info, related links, sitemap, social media links</p>
+        <p>Can be used multiple times: Each section or article can have its own footer</p>
+        <p>Semantic benefit: Clearly marks the end of content and provides important document information</p>
+    </footer>
+
+    <!-- NON-SEMANTIC TAGS EXPLANATION -->
+    <h1>Non-Semantic Tags (Generic Containers)</h1>
+    
+    <h2>What are Non-Semantic Tags?</h2>
+    <p>Non-semantic tags are generic HTML elements like &lt;div&gt; and &lt;span&gt; that have NO built-in meaning.</p>
+    <p>They are purely for styling and layout without indicating what the content represents.</p>
+    
+    <h2>Difference Between Semantic and Non-Semantic</h2>
+    <p>SEMANTIC: &lt;header&gt; tells you "this is a header" - has meaning</p>
+    <p>NON-SEMANTIC: &lt;div&gt; tells you nothing about the content - no meaning</p>
+    
+    <h2>When to use Non-Semantic Tags?</h2>
+    <p>When no semantic tag fits your needs perfectly</p>
+    <p>For styling and layout that semantic tags don't cover</p>
+    <p>As a fallback when semantic alternatives don't exist</p>
+    
+    <h2>Problems with Non-Semantic Tags</h2>
+    <dl>
+        <dt>Poor SEO:</dt>
+        <dd>Search engines can't determine what content is important or what it represents</dd>
+        
+        <dt>Reduced Accessibility:</dt>
+        <dd>Screen readers for visually impaired users get no context about the content</dd>
+        
+        <dt>Unclear Intent:</dt>
+        <dd>Other developers (and you in 6 months) won't understand the purpose of the markup</dd>
+        
+        <dt>Higher Maintenance:</dt>
+        <dd>You must rely on class names and comments to explain structure</dd>
+        
+        <dt>Less Meaningful:</dt>
+        <dd>Code doesn't explain itself - requires additional documentation</dd>
+    </dl>
+    
+    <h2>Examples of Non-Semantic vs Semantic</h2>
+    <p>OLD WAY (Non-semantic): &lt;div class="header"&gt;...&lt;/div&gt;</p>
+    <p>NEW WAY (Semantic): &lt;header&gt;...&lt;/header&gt;</p>
+    <p>OLD WAY (Non-semantic): &lt;div class="article"&gt;...&lt;/div&gt;</p>
+    <p>NEW WAY (Semantic): &lt;article&gt;...&lt;/article&gt;</p>
+
+</body>
+</html>

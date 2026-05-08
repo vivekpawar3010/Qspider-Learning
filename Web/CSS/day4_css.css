@@ -1,0 +1,75 @@
+/* day4_css.css
+   External stylesheet for day4_css.html
+   The HTML file connects to this CSS using:
+   <link rel="stylesheet" href="./day4_css.css">
+   This file styles the page with selectors that match HTML elements, classes, and IDs.
+*/
+
+/* Base styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* Header styles */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Main content area spacing */
+main {
+    padding: 20px;
+}
+
+/* Each section gets vertical spacing */
+section {
+    margin-bottom: 30px;
+}
+
+/* Definition list titles */
+dt {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* ID selector example: styles only the element with id="history" */
+#history {
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Class selector example: any element with class="example-text" */
+.example-text {
+    color: #333;
+    font-style: italic;
+    padding: 5px 0;
+}
+
+/* Style for code blocks to make HTML examples easy to read */
+pre,
+code {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    display: block;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+}

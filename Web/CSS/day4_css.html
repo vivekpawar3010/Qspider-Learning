@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 CSS</title>
+    <!-- External CSS is connected using the <link> tag below. The browser loads day4_css.css and applies its styles to this HTML page. -->
+    <link rel="stylesheet" href="./day4_css.css">
+</head>
+<body>
+    <header>
+        <h1>CSS - Cascade Style Sheets</h1>
+    </header>
+
+    <main>
+        <section id="history">
+            <h2>History of CSS</h2>
+            <dl>
+                <dt>1994</dt>
+                <dd>CSS was first proposed by Håkon Wium Lie while working at CERN.</dd>
+                <dt>1996</dt>
+                <dd>CSS Level 1 (CSS1) was released with basic styling features.</dd>
+                <dt>1998</dt>
+                <dd>CSS Level 2 (CSS2) introduced positioning, z-index, and media types.</dd>
+                <dt>2011+</dt>
+                <dd>CSS3 moved to a modular format, adding transitions, animations, flexbox, and responsive design.</dd>
+                <dt>Today</dt>
+                <dd>CSS continues to grow with new modules and browser support for modern layout techniques.</dd>
+            </dl>
+        </section>
+
+        <section id="types">
+            <h2>Types of CSS</h2>
+            <dl>
+                <dt>Inline CSS</dt>
+                <dd>Applied directly to an HTML element using the <code>style</code> attribute.</dd>
+                <dd>Example: <code>&lt;p style="color: red; font-size: 20px;"&gt;Text&lt;/p&gt;</code></dd>
+                <dd>Inline CSS has the highest specificity and can override other styles.</dd>
+                <dd>Use it only for quick fixes or temporary testing, because it mixes content and presentation.</dd>
+
+                <dt>Internal CSS</dt>
+                <dd>Written inside a <code>&lt;style&gt;</code> block in the HTML <code>&lt;head&gt;</code>.</dd>
+                <dd>Example: <code>&lt;style&gt; p { color: blue; } &lt;/style&gt;</code></dd>
+                <dd>Internal CSS applies to the entire page and is useful for page-specific styling.</dd>
+                <dd>It is easier to manage than inline CSS but still stays inside the HTML file.</dd>
+
+                <dt>External CSS</dt>
+                <dd>Stored in a separate <code>.css</code> file and linked using the <code>&lt;link&gt;</code> tag.</dd>
+                <dd>Example: the current page uses <code>./day4_css.css</code>.</dd>
+                <dd>External CSS is best for multi-page websites and cleaner HTML code.</dd>
+                <dd>It improves maintainability, reuse, and performance.</dd>
+                <dd>To increase rule importance: use <code>!important</code>, higher specificity, or IDs.</dd>
+            </dl>
+        </section>
+
+        <section id="css-connection">
+            <h2>How HTML connects to CSS</h2>
+            <p>The HTML file connects to an external CSS file using the <code>&lt;link&gt;</code> tag:</p>
+            <pre><code>&lt;link rel="stylesheet" href="./day4_css.css"&gt;</code></pre>
+            <p>This line is placed inside the <code>&lt;head&gt;</code> section. It tells the browser to load the CSS file and
+                apply its rules to the page.</p>
+            <p>External CSS is the best choice for larger websites because the same stylesheet can style multiple pages.</p>
+        </section>
+        <section id="examples">
+            <h2>Examples of CSS Use</h2>
+            <p><strong>Inline CSS example:</strong></p>
+            <p style="color: blue; font-weight: bold;">This text uses inline CSS directly in the HTML tag.</p>
+        
+            <p><strong>Internal CSS example:</strong></p>
+            <style>
+                .internal-example {
+                    color: darkgreen;
+                    font-style: italic;
+                }
+            </style>
+            <p class="internal-example">This text uses internal CSS inside the same HTML file.</p>
+        
+            <p><strong>External CSS example:</strong></p>
+            <p class="example-text">This text uses external CSS from day4_css.css.</p>
+        </section>
+
+        <section id="selectors">
+            <h2>Selectors</h2>
+            <p>Selectors tell CSS which HTML elements should receive style rules.</p>
+            <dl>
+                <dt>Element Selector</dt>
+                <dd>Targets all elements of a given tag. Example: <code>p { color: green; }</code> affects every paragraph.
+                
+                    <dt>Class Selector</dt>
+                    <dd>Targets elements with a specific class. Example: <code>.highlight { font-weight: bold; }</code>.</dd>
+                    
+                    <dt>ID Selector</dt>
+                    <dd>Targets a single element with a unique ID. Example: <code>#main-title { font-size: 28px; }</code>.</dd>
+                    
+                    <dt>Group Selector</dt>
+                    <dd>Targets multiple selectors at once. Example: <code>h1, h2, p { margin: 0; }</code>.</dd>
+                </dd>
+
+                
+
+                <dt>Pseudo-class Selector</dt>
+                <dd>Targets an element state like <code>:hover</code>, <code>:focus</code>, or <code>:active</code>.</dd>
+
+                <dt>Combinator Selector</dt>
+                <dd>Targets elements based on relationships, such as <code>div p</code> or <code>ul &gt; li</code>.
+                    
+                    <dt>child selector</dt>
+                </dd>
+
+            
+            </dl>
+        </section>
+
+
+        <section id="display">
+            <h2>Display Property</h2>
+            <p>The <code>display</code> property defines how an element is rendered in the layout.</p>
+            <dl>
+                <dt><code>display: block;</code></dt>
+                <dd>Block elements take up the full width and start on a new line. Example: <code>div</code>, <code>p</code>.</dd>
+
+                <dt><code>display: inline;</code></dt>
+                <dd>Inline elements stay on the same line and only take as much width as needed. Example: <code>span</code>, <code>a</code>.</dd>
+
+                <dt><code>display: inline-block;</code></dt>
+                <dd>Inline-block elements act like inline elements but allow width and height to be set.</dd>
+
+                <dt><code>display: none;</code></dt>
+                <dd>Hides the element completely. It does not appear and does not occupy space.</dd>
+
+                <dt><code>display: flex;</code></dt>
+                <dd>Creates a flexible container to align and distribute space among items.
+
+                    <dt>justify content</dt>
+                    <dd>
+                        <p></p>
+                        <dt>space</dt>
+                        <dd>space around</dd>
+                        <dd>apace between</dd>
+                        <dd>space evenly</dd>
+                        <dd>end</dd>
+                    </dd>
+
+                    <dt>align-items</dt>
+                    <dd>
+                        <p></p>
+                        <dd>center</dd>
+                    </dd>
+
+                </dd>
+
+                <dt><code>display: grid;</code></dt>
+                <dd>Creates a grid container with rows and columns for advanced layouts.</dd>
+            </dl>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>This footer explains the page structure and the connection between HTML and CSS.</p>
+    </footer>
+</body>
+</html>
