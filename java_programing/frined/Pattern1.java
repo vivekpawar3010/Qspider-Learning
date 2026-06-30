@@ -1,0 +1,27 @@
+class Pattern1 {
+	public static void main(String[] args) {
+
+		int n = new java.util.Scanner(System.in).nextInt();
+
+		int n1 = 0, n2 = 1, n3;
+		// to skip the first n - 5 fibbo number
+
+		for (int i = 1; i <= n - 5; i++) {
+			n3 = n1 + n2;
+			n1 = n2;
+			n2 = n3;
+		}
+
+		int count = (n > 5) ? 5 : n - 1;
+		System.out.println("this last 5 fibbonacci series nubmers in decresing order from " + n);
+		fibbo(n1, n2, n, count);
+	}
+
+	public static void fibbo(int n1, int n2, int ith, int count) {
+		if (count > 0) {
+			fibbo(n2, n1 + n2, ith - 1, count - 1);
+		}
+
+		System.out.print(n1 + " ");
+	}
+}

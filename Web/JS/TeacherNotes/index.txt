@@ -1,0 +1,51 @@
+// // console.log("Hello Java script");
+// // var a = 10;
+// // console.log(a);
+// // var b = "Hello";
+// // console.log(b);
+// const a = 20;
+// console.log(a);
+
+//Declaration
+// var a;
+// a = 100; //intiliaztion
+// console.log(a);
+
+//Declaration+intiliazation
+// var a = 1000;
+//Updation/ReIntilazation
+// a = 2000;
+
+//Redeclare+Reintilise
+// var a = 3000;
+// console.log(a);
+
+//Declaration
+// let a;
+// a = 1000;//intiliazation
+// console.log(a);
+
+//Declaration+intiliazation
+// let a = 1000;
+// Updation / ReIntilazation;
+// a = 2000;
+// console.log(a);
+
+//Redeclare+Reintilise it will not work in let
+// let a = 3000;
+// console.log(a);
+
+//Declaration is not possible in const
+// const a;
+// a=2000
+// console.log(a);
+
+// Declaration+intiliazation
+// const a = 1000;
+//Updation is not possible in const
+// a = 5000;
+//Redeclare+Reintilise
+// const a = 1000;
+// console.log(a);
+let a = 100;
+console.log();

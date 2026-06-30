@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+#aside {
+    width: 25%;
+    background-color: antiquewhite;
+    padding-top: 20px;
+}
+
+
+
+#main {
+    width: 75%;
+}
+
+.userinfo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#fullname {
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.userinfo img {
+    border: red solid 3px;
+    border-radius: 50px;
+    margin-left: 10px;
+}

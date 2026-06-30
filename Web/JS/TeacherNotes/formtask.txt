@@ -1,0 +1,16 @@
+// function submit() {
+//   //   console.log("Function called");
+//   let x = document.getElementById("username");
+//   console.log(x.value);
+//   console.log(typeof x.value);
+// }
+
+function login() {
+  let a = document.getElementById("username");
+  let b = document.getElementById("password");
+  if (a.value === "" || b.value === "") {
+    alert("Please Enter valid credentials");
+  } else {
+    alert("Login successfull");
+  }
+}

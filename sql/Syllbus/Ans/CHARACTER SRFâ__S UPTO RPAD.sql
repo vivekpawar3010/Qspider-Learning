@@ -1,0 +1,143 @@
+-- Here is the text extracted from the provided document, maintaining the questions and outputs as they appear:
+
+-- **CHARACTER SRF'S**
+
+-- **1] WAQTD NAMES OF EMP'S WHOSE NAME IS HAVING CHAR 'S'.** 
+-- **O/P:** 
+-- ENAME
+-- SMITH
+-- JONES
+-- SCOTT
+-- ADAMS
+-- JAMES 
+
+-- ---
+
+-- **2] WAQTD NAME OF EMP'S IN REVERSE IF NAME IS HAVING CHAR 'M'.** 
+-- **O/P:** 
+-- *(Note: 'IKAS KALAL' appears as a watermark artifact here)* 
+-- ENAME
+-- SMITH
+-- MARTIN
+-- ADAMS
+-- JAMES
+-- MILLER 
+
+-- ---
+
+-- **3] WAQTD NAMES & DESIGNATION OF EMP'S WHOSE NAME IS HAVING AT LEAST 2 'A' S.** 
+-- **O/P:** 
+-- ENAME JOB
+-- ADAMS CLERK 
+
+-- ---
+
+-- **4] WAQTD DETAILS OF EMP'S WHOSE NAME IS HAVING EXACTLY ONE 'T'.** 
+-- **O/P:** 
+
+-- | EMPNO | ENAME | JOB | MGR | HIREDATE | SAL | COMM | DEPTNO |
+-- | --- | --- | --- | --- | --- | --- | --- | --- |
+-- | 7369 | SMITH | CLERK | 7902 | 17-DEC-80 | 800 |  | 20 |
+-- | 7654 | MARTIN | SALESMAN | 7698 | 28-SEP-81 | 1250 | 1400 | 30 |
+-- | 7844 | TURNER | SALESMAN | 7698 | 08-SEP-81 | 1500 | 0 | 30 |
+-- | <br><br> |  |  |  |  |  |  |  |
+
+-- ---
+
+-- **6] WAQTD NAMES OF EMP'S WHOSE NAME IS NOT HAVING CHAR 'A' AND CHAR 'E' IN THE NAME THAT TOO IN LOWER CASE.** 
+-- **O/P:** 
+-- VIKASK
+-- LOWER(ENAM 
+
+-- ---
+
+-- **7] WAQTD NAME & JOINING DATE OF THE EMP WHOSE JOINING MONTH IS HAVING STRING 'PR'.** 
+-- **O/P:** 
+-- ENAME HIREDATE
+-- JONES 02-APR-81
+-- SCOTT 19-APR-87 
+
+-- ---
+
+-- **8] WAQTD 1ST 3 CAHR'S OF NAMES & DESIGNATION OF THE EMP WHOSE DESIGNATION IS HAVING STRING 'MAN'.** 
+-- **O/P:** 
+-- SUB JOB
+-- MAS KALAL
+-- ALL SALESMAN
+-- WAR SALESMAN
+-- JON MANAGER
+-- MAR SALESMAN
+-- BLA MANAGER
+-- CLA MANAGER
+-- TUR SALESMAN
+-- 7 rows 
+
+-- ---
+
+-- **9] WAQTD NAMES OF EMP'S IN UPPER CASE WHOSE NAME IS HAVING CHAR 'E' IN THE NAME, REPLACE CHAR 'E' WITH CHAR 'F'.** 
+-- **O/P:** 
+-- UPPER(REPL
+-- ALLFN
+-- JONFS
+-- BLAKF
+-- TURNFR
+-- JAMFS
+-- MILLFR
+-- 6 rows selected. 
+
+-- ---
+
+-- **10] WAQTD NAMES OF EMP'S & NUMBER OF CHAR 'O' IN THE NAME FOR ALL THE EMP'S WHOSE NAME IS HAVING VOWELS EXCEPT CHAR 'E' & 'A'.** 
+-- KAKALAL
+-- **EX:** 
+-- ENAME LENGTH(ENAME)-LENGTH(REPLACE(ENAME,'O'))
+-- SMITH 0
+-- SCOTT 1
+-- KING 0
+-- FORD 1 
+
+-- ---
+
+-- **11] WAQTD NAMES OF EMP'S TRIMMED WITH 1ST CHAR IF NAME STARTS WITH CHAR 'J'.** 
+-- **O/P:** 
+-- TRIM(LEADI
+-- ONES
+-- AMES 
+
+-- ---
+
+-- **12] WAQTD NAMES OF EMP'S TRIMMED WITH LAST CHAR IF NAME OF THE EMP ENDS WITH CHAR 'S'.** 
+-- **O/P:** 
+-- TRIM(TRAIL
+-- JONE
+-- ADAM
+-- JAME 
+
+-- ---
+
+-- **13] WAQTD NAMES OF EMP'S TRIMMED WITH 1ST & LAST CHAR IF NAME IS HAVING TOTAL 6 CHAR'S AND STARTS WITH 'M'.** 
+-- **O/P:** 
+-- KAS
+-- KALAL
+-- TRIM('M'FR
+-- ARTIN
+-- ILLER 
+
+-- ---
+
+-- **14] WAQTD NAMES OF EMP'S PRE-FIXED WITH 3 '*' IF EMP HAVING STRING 'MI' IN THE NAME.** 
+-- **O/P:** 
+-- LPAD(ENAME,LENGTH(ENAME)+3,'*')
+-- ***SMITH
+-- ***MILLER 
+
+-- ---
+
+-- **15] WAQTD NAMES OF EMP'S SUFFIXED WITH 4 '#' IF EMP'S DESIGNATION HAVING STRING 'NAG'.** 
+-- **O/P:** 
+-- RPAD(ENAME,LENGTH(ENAME)+4,'#')
+-- JONES####
+-- BLAKE####
+-- CLARK####
+-- KALAL
+-- VIKAS

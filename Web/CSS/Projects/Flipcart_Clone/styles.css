@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+
+}
+.sides{
+    width: 15vw;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: aliceblue;
+}
+
+#leftheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 2 0vw;
+}
+
+.options {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: aqua;
+    padding: 15px;
+}
+
+
+
+
+#headermain {
+    margin: 10px 0 10px 0;
+    height: 20px;
+}
+
+#loc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+
+img{
+    height: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #212121;
+    color: white;
+    
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+div h4 {
+    font-weight: lighter;
+    color: #665d5d;
+}
+
+section h5 {
+    font-weight: lighter;
+    color: #665d5d;
+}
+
+.verticle-line {
+    border-left: 2px solid rgb(255, 255, 255);
+    /* Line thickness and color */
+    height: 120px;
+    /* Length of the line */
+    margin: 0 20px;
+
+    margin-top: 30px;
+    /* Space on sides */
+}
+
+#upper {
+    display: flex;
+}
+#upper *{
+    padding: 3px;
+}
+
+#lower {
+    display: flex;
+    justify-content: space-around;
+}
+
+#leftside {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+#rightside {
+    display: flex;
+
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+}

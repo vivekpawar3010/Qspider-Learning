@@ -1,0 +1,279 @@
+// let a = 10;
+// let b = 20;
+// console.log(a + b);
+// let c = 40;
+// let d = 50;
+// console.log(c + d);
+
+// function add(a, b) {
+//   console.log(a + b);
+// }
+
+// add(10, 20);
+
+// let userInput = prompt("Enter a Number");
+// let x = Number(userInput);
+
+// function evenorodd(a) {
+//   if (a % 2 === 0) {
+//     alert("Even Number");
+//   } else {
+//     alert("Odd Number");
+//   }
+// }
+// evenorodd(x);
+
+// function demo() {
+//   console.log("Function called");
+//   let a = prompt("Enter a First Number");
+//   let b = prompt("Enter a second Number");
+//   if (Number(a) > Number(b)) {
+//     console.log(a);
+//   } else {
+//     console.log(b);
+//   }
+// }
+
+// let a = prompt("Enter a Number");
+// console.log(typeof a);
+
+// function demo() {
+//   let x = prompt("Enter a Number");
+//   if (x === "") {
+//     alert("Please Enter a Number");
+//     x = prompt("Enter a Number");
+//   }
+//   if (x !== "") {
+//     console.log(x);
+//   }
+// }
+// demo();
+
+//Function Expression
+// let x = function demo(a, b) {
+//   console.log("Function Expression", a + b);
+// };
+// x(10, 20);
+
+//Anonymous Function
+// let x = function () {
+//   console.log("Anonymous Function");
+// };
+// x();
+
+//Immediate Invoke Function
+// (function demo() {
+//   console.log("Immediate Invoke Function");
+// })();
+
+//default parameter function
+// function demo(a = 0, b = 0) {
+//   console.log(a + b);
+// }
+// demo(10, 20);
+// demo();
+
+// function calculateTotalSalary(a = 0, b = 0) {
+//   let total = a + b;
+//   console.log(a + b);
+// }
+// calculateTotalSalary(10000, 20000);
+// calculateTotalSalary(10000);
+// calculateTotalSalary();
+
+// function demo(a) {
+//   return a;
+// }
+// let x = demo(10);
+// console.log(x);
+// //Arrow Function
+// let arrFun = (a) => a + a;
+// let y = arrFun(10);
+// console.log(y);
+
+//Nested Function
+// let outerFunction = () => {
+//   console.log("Outer Function");
+//   let innerFunction = () => {
+//     console.log("Inner Function");
+//   };
+//   innerFunction();
+// };
+// outerFunction();
+
+//HigherOrder&CallBack Function
+
+// let demo = (a, b, c) => {
+//   console.log(a);
+//   console.log(b);
+//   c();
+// };
+
+// demo(10, "hi", () => {
+//   console.log("Hello");
+// });
+
+// let even = (a, c) => {
+//   if (a % 2 === 0) {
+//     c("Even");
+//   } else {
+//     c("Odd");
+//   }
+// };
+// even(9, (x) => {
+//   console.log(x);
+// });
+
+//Create a function to print "Hello World". 2pir
+
+// let areaOfCircle = (r) =>{
+
+//     let area = 2*3.14*r;
+//     console.log(area);
+
+// }
+// areaOfCircle(1)
+
+//Create a function expression to calculate simple interest.
+
+// let simpleInterest = (P, R, T) => {
+//   let ans = (P * R * T) / 100;
+//   console.log(ans);
+// };
+
+// simpleInterest(100, 10, 2);
+
+//Create an arrow function that returns "Pass" or "Fail" based on marks.
+
+// let result = (marks) => {
+//   if (marks > 35   ) {
+//     return "Pass";
+//   } else {
+//     return "Fail";
+//   }
+// };
+// let x = result(35);
+// console.log(x);
+
+//Create a calculator function using callbacks for addition, subtraction, multiplication, and division.
+
+// let add = (a) => {
+//     return(a*a);
+
+// }
+// let x = add(10);
+// console.log(x);
+
+//Create a calculator function using callbacks for addition, subtraction, multiplication, and division.
+
+// let calculator=(a,b,c)=>{
+//      c(a+b,a-b,a*b,a/b);
+// }
+// calculator(10,20,(add,sub,mul,div)=>{
+//     console.log(add);
+//     console.log(sub);
+//     console.log(mul);
+//     console.log(div);
+
+// })
+//Create a function that executes a callback 5 times.
+// let ans = (c) => {
+//   for(let i=0;i<5;i++){
+//     c();
+//   }
+// };
+// ans(() => {
+//   console.log("hello");
+// });
+// Create an arrow function that calculates the cube of a number.
+// let power = (base,raise) => {
+//     let pow=1;
+//     for(let i=0;i<raise;i++){
+//       pow=pow*base;
+//     }
+//     console.log("Power: ",pow);
+
+// };
+// power(2,5)
+
+// Create a function that accepts two numbers and a callback operation.
+
+// let fun = (a, b, c) => {
+//   c(a, b);
+// };
+// fun(10, 20, (x, y) => {
+//   console.log(x + y);
+// });
+
+//Create a higher-order function that accepts another function and executes it.
+// let func = (a, b, c) => {
+//   c(a, b);
+// };
+// func(100, 300, (x, y) => {
+//   console.log(x * y);
+// });
+
+//Create a function that prints "Task Started" and then calls a callback.
+
+// let func = (a) => {
+//   console.log("Task Started");
+//   a();
+// };
+// func(() => {
+//   console.log("Task Completed");
+// });
+
+// Create a higher-order function that accepts a callback and a value and passes the value to the callback.
+
+// let func = (a, b) => {
+//   b(a);
+// };
+// func(100, (x) => {
+//   console.log(x);
+// });
+
+// Create a higher-order function that logs a message before executing a callback.
+// let exm = (a) => {
+//   console.log("Higher order function");
+//   a();
+// };
+// exm(() => {
+//   console.log("Call back function");
+// });
+//  Create a higher-order function that executes a callback N times.
+// let funn = (a, b) => {
+//   for (let i = 0; i < a; i++) {
+//     b(i);
+//   }
+// };
+// funn(10, (x) => {
+//   console.log("callback function executed", x);
+// });
+//Create a function that accepts success and failure callbacks.
+
+// let fun = (a, b) => {
+//   a();
+//   b();
+// };
+// fun(
+//   () => {
+//     console.log("success");
+//   },
+//   () => {
+//     console.log("failure");
+//   },
+// );
+
+//Create a higher-order function that validates input before executing a callback.
+
+// let fun = (a, b) => {
+//   if (a > 0) {
+//     console.log("Positive");
+//   } else {
+//     console.log("Negative");
+//   }
+//   b();
+// };
+// fun(10, () => {
+//   console.log("Callback Executed");
+// });

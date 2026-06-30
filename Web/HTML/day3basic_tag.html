@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 3 - Basic HTML Tags</title>
     <style>
-        td, th {
+        td,
+        th {
             padding: 15px;
         }
+
         .example {
             border: 1px solid #ccc;
             padding: 10px;
             margin: 10px 0;
         }
+
         #div>div {
             display: inline-block;
             gap: 10px;
         }
     </style>
 </head>
+
 <body>
     <div id="list">
         <h1>List Tags</h1>
@@ -89,28 +94,33 @@
         <h1>Div Tag</h1>
         <dl>
             <dt>Definition</dt>
-            <dd>The &lt;div&gt; tag is used to create a container or division for grouping HTML elements. It is a block-level element that can contain other elements and is often used for layout and styling purposes.</dd>
+            <dd>The &lt;div&gt; tag is used to create a container or division for grouping HTML elements. It is a
+                block-level element that can contain other elements and is often used for layout and styling purposes.
+            </dd>
         </dl>
 
         <div class="shoes example" style="height: 400px; width: 300px; background-color: #854646;">
             <img src="./resources/images/bike.png" alt="" height="100px">
             <h3>OK shoes</h3>
             <b>$199.99</b>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum tempore eum quam fugiat unde praesentium quia officia.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum tempore eum quam fugiat unde
+                praesentium quia officia.</p>
         </div>
 
         <div class="car example" style="height: 400px; width: 300px; background-color: #30d256;">
             <img src="./resources/images/bike.png" alt="" height="100px">
             <h3>OK car</h3>
             <b>$19999.99</b>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum tempore eum quam fugiat unde praesentium quia officia.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum tempore eum quam fugiat unde
+                praesentium quia officia.</p>
         </div>
 
         <div class="bike example" style="height: 400px; width: 300px; background-color: #6948f9;">
             <img src="./resources/images/bike.png" alt="" height="100px">
             <h3>OK bike</h3>
             <b>$1999.99</b>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum tempore eum quam fugiat unde praesentium quia officia.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum tempore eum quam fugiat unde
+                praesentium quia officia.</p>
         </div>
     </div>
 
@@ -193,17 +203,21 @@
         <h1>Form Tag</h1>
         <dl>
             <dt>Definition</dt>
-            <dd>A form is a section of a document that contains interactive controls for submitting information to a web server.</dd>
+            <dd>A form is a section of a document that contains interactive controls for submitting information to a web
+                server.</dd>
             <dt>&lt;form&gt;</dt>
-            <dd>The main tag to create a form. It can contain various input elements like text fields, checkboxes, radio buttons, etc.</dd>
+            <dd>The main tag to create a form. It can contain various input elements like text fields, checkboxes, radio
+                buttons, etc.</dd>
             <dt>action</dt>
             <dd>Specifies the URL where the form data will be sent when submitted.</dd>
             <dt>method</dt>
             <dd>Specifies the HTTP method to use when submitting the form (e.g., GET or POST).</dd>
 
             <dt><b>Some other tags and attributes</b></dt>
-            <dd><strong>&lt;label&gt;</strong> - Associates a text label with a form control. Use the for attribute to link it to an input ID.</dd>
-            <dd><strong>&lt;input&gt;</strong> - Creates single-line controls such as text, email, password, radio, tel, and file inputs.</dd>
+            <dd><strong>&lt;label&gt;</strong> - Associates a text label with a form control. Use the for attribute to
+                link it to an input ID.</dd>
+            <dd><strong>&lt;input&gt;</strong> - Creates single-line controls such as text, email, password, radio, tel,
+                and file inputs.</dd>
             <dd><strong>&lt;select&gt;</strong> - Creates a drop-down list of options.</dd>
             <dd><strong>&lt;optgroup&gt;</strong> - Groups related options inside a select list.</dd>
             <dd><strong>&lt;textarea&gt;</strong> - Creates a multi-line text field.</dd>
@@ -249,7 +263,7 @@
                 <optgroup>
                     <label for="">North America</label>
                     <option value="usa">USA</option>
-                    <option value="canada">Canada</option>  
+                    <option value="canada">Canada</option>
                 </optgroup>
             </select>
 
@@ -263,7 +277,8 @@
             <br><br>
 
             <label for="file">Upload File</label>
-            <input type="file" id="file" accept=".pdf, .jpg"> <!-- This will open the file explorer to select a file for upload. Use the accept attribute (e.g., accept=".jpg, .png, .pdf") to restrict allowed file types. -->
+            <input type="file" id="file" accept=".pdf, .jpg">
+            <!-- This will open the file explorer to select a file for upload. Use the accept attribute (e.g., accept=".jpg, .png, .pdf") to restrict allowed file types. -->
             <br><br>
 
 
@@ -272,4 +287,5 @@
 
     </div>
 </body>
+
 </html>

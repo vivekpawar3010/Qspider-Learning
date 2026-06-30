@@ -1,8 +1,85 @@
 -- 1] LIST OUT ALL THE OPERATORS IN SQL.
+--  SQL Operators are used to perform operations on data stored in database tables.
+
+-- => TYPE OF SQL OPERATOR
+
+-- i] Arithmetic Operator
+-- -----------------------
+-- 1] +   >  Addition
+-- 2] -   >  Subtraction
+-- 3] * >  Multiplication
+-- 4] /   >  Division
+-- 5] %   >  Modulus
+
+
+-- ii] Relational (comparison) Operators
+-- -------------------------------------
+-- 1] =   >  Equal to
+-- 2] != or <> > Not equal to
+-- 3] >   >  Greater than
+-- 4] <   >  Less than
+-- 5] >=  >  Greater than equal to
+-- 6] <=  >  Less than equal to
+
+
+-- iii] Logical Operator
+-- ---------------------
+-- 1] AND >  Both conditions true
+-- 2] OR  >  If any one condition true
+-- 3] NOT >  To Negative condition
+
+-- iv] Special Operators
+-- ----------------------
+-- 1] IS & IS NOT >
+-- 2] BETWEEN & NOT BETWEEN > 
+-- 3] LIKE &  NOT LIKE
+-- 4] IN & NOT IN 
+-- 
+
 
 -- 2] EXPLAIN BETWEEN AND LIKE OPERATOR WITH EXAMPLE.
 
+
+-- iv] Between Operator
+-- --------------------
+-- - Used to display rows based on a range of values.
+-- - It is inclusive (includes both start and end values).
+
+-- Example:
+-- SELECT * FROM EMP WHERE SAL BETWEEN 1000 AND 3000;
+
+-- vi] LIKE Operator
+-- -----------------
+-- - Used for pattern matching using wildcards:
+--   1] %  → Matches zero or more characters.
+--   2] _  → Matches exactly one character.
+
+-- Example:
+-- SELECT * FROM EMP WHERE ENAME LIKE 'S%';
+
+
 -- 3] WHAT IS SELECTION ? EXPLAIN DISTINCT CLAUSE
+
+-- -----------------------------------------
+--  Selection is the process of retrieving specific rows from a table based on a condition using the WHERE clause.
+
+-- Syntax:
+-- SELECT * FROM table_name WHERE column_name condition;
+
+-- Example:
+-- SELECT * FROM EMP WHERE DEPTNO = 10;
+-- Represents the employee rows working in department 10.
+
+
+-- ------------------------
+--  DISTINCT clause is used to remove duplicate values from the output.
+
+-- Syntax:
+-- SELECT DISTINCT column_name FROM table_name;
+
+Example:
+SELECT DISTINCT DEPTNO FROM EMP;
+--> Represents unique department numbers present in the EMP table.
 
 -- 4] WAQTD NAME, WAGES, 12% DEDUCTION IN WAGES FOR THE EMP'S WHO HIRED AFTER 1981 WITHOUT HAVING ANY COMMISSION.
 select ename, sal, sal - (sal*12/100) as deduction from emp 

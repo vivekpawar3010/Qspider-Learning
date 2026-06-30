@@ -1,0 +1,74 @@
+#main-container{
+    height: 700px;
+    width: 100%;
+    border: 2px solid red;
+    background-image: url("https://img.freepik.com/free-vector/minimal-mountain-landscape-shades-blue_1048-20252.jpg?semt=ais_hybrid&w=740&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#login-box{
+    height: 600px;
+    width: 400px;
+    border-radius: 100px;
+        /* background   -color: black;  */
+    /* opacity: .5; */
+}
+#innerimg{
+    height: 250px;
+    width: 100%;
+}
+
+#login-form{
+    height: 350px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon{
+    height: 30px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#username, #password{
+    font: 1em sans-serif;
+    font-size: medium;
+    padding: 10px;  
+    border-radius: 10px;
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+    filter: grayscale(100%);
+}
+
+#login-btn{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(31, 167, 208);
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+    border: nones;
+}
+
+button:hover{
+    background-color: rgb(31, 167, 208);
+    color: rgb(219, 37, 37);
+    border: none;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}

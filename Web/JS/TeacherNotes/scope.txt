@@ -1,0 +1,92 @@
+//Global Scope
+// const a = 100;
+// console.log(a);
+
+//Function Scope
+// let demo = () => {
+//   var x = 100;
+//   let y = 200;
+//   const z = 300;
+//   console.log(x, y, z);
+// };
+// console.log(x, y, z);
+// demo();
+
+//Block Scope
+// if (true) {
+//   let x = 100;
+//   var y = 200;
+//   const z = 300;
+//   console.log(x, y, z, a);
+// }
+// console.log(y);
+
+// let outerFunction = () => {
+//   let x = 100;
+
+//   let innerFunction = () => {
+//     console.log(x);
+//   };
+//   innerFunction();
+// };
+// outerFunction();
+
+// {
+//   let a = 100;
+//   const b = 400;
+//   var c = 500;
+//   console.log(a, b, c);
+// }
+// console.log(c);
+
+// let a = 100;
+// console.log(a);
+// function demo() {
+//   let a = 200;
+//   a = 300;
+//   console.log(a);
+// }
+// demo();
+// console.log(a);
+
+// let x = 500;
+// if (true) {
+//   a = 1000;
+// }
+// console.log(a);
+// console.log(window);
+// console.log(console);
+// function outerFunction(){
+//     var
+// }
+// outerFunction()
+
+// console.log(a);
+// let a = 10;
+
+// var x = 100;
+// console.log(x);
+// function demo() {
+//   // console.log(x);
+//   x++;
+//   // let x = 200;
+//   console.log(x);
+// }
+// demo();
+// console.log(x);
+// outerFunction();
+// var x = 100;
+// let outerFunction = () => {
+//   x++;
+//   console.log(x);
+//   var x = 200;
+//   function innerFunction() {
+//     console.log(x);
+//   }
+//   innerFunction();
+// };
+// let x = 100;
+// console.log(func());
+// var func = () => {
+//   console.log(x);
+// };

@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Inter', -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #2d666d;
+    background-image: linear-gradient(135deg,  #3d636a, #75a5ad);
+}
+
+#mainbox {
+    width: 80vw;
+    height: 90vh;
+    background: white;
+    overflow: hidden;
+    border-radius: 35px;
+    display: flex;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+#leftside {
+    width: 55%;
+    padding: 20px 50px 40px 50px ;
+    background: #f5f7fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#logo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #42a6b1;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#trust {
+    font-size: 2rem;
+    line-height: 1.1;
+    font-weight: bolder;
+    max-width: 400px;
+    color: #42a6b1;
+}
+
+#subtitle {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 520px;
+    color: #3b4f53;
+}
+
+#appointbox {
+    margin-top: 20px;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    border: 2px solid #42a6b1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+#appointbox h3 {
+    font-size: 1.2  rem;
+    font-weight: 700;
+    color: #42a6b1;
+}
+
+#inputs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.inputbox {
+    flex: 1;
+    height: 40px;
+    border: 2px solid #e6e6e6;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    background: #fafafa;
+}
+
+.inputbox input {
+    all: unset;
+    width: 100%;
+    font-size: 0,9rem;
+    color: #444;
+}
+
+.inputbox i {
+    color: #999;
+    font-size: 0.8rem;
+}
+::placeholder{
+    font-size: 0.8rem;
+}
+select {
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    color: #333;
+    background: transparent;
+    cursor: pointer;
+}
+
+#location::placeholder{
+    color: red;
+}
+
+#searchbtn {
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 3px;
+    background: #b779d7;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#searchbtn:hover {
+    background: #9d5dc0;
+}
+
+#rightside {
+    width: 45%;
+    background: #184e58;
+    position: relative;
+    padding: 40px;
+    overflow: hidden;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+#clientbtn {
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+#doctorsection {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circlebg {
+    position: absolute;
+    height: 420px;
+    width: 260px;
+    background: #d8d9df;
+    border-radius: 180px;
+    background-image: url("./vivek.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.floatingcard {
+    position: absolute;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.floatingcard i {
+    font-size: 0.6rem;
+}
+
+.floatingcard h4 {
+    font-size: 0.7rem;
+    margin-bottom: 3px;
+    color: #222;
+}
+
+.floatingcard p {
+    font-size: 0.5rem;
+    color: #555;
+}
+
+.card1 {
+    top: 100px;
+    left: 5px;
+}
+
+.card2 {
+    top: 170px;
+    right: 0px;
+}
+
+.card3 {
+    left: 10px;
+    bottom: 150px;
+}
+
+.card4 {
+    right: 20px;
+    bottom: 90px;
+}
+
+.card3 i {
+    color: #d95374;
+}
+
+.card4 i {
+    color: #f6b800;
+}

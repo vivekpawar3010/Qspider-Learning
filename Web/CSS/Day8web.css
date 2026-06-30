@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+#fixed{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: rgb(0, 0, 0) solid 2px;
+}
+#sticky{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: sticky;
+    top: 0px;
+    border: rgb(0, 0, 0) solid 2px;
+}
+#relative{
+height: 200px;
+width: 200px;
+background-color: red;
+position: relative;
+left: 100px;
+transition: left 1s ease;
+    border: rgb(0, 0, 0) solid 2px;
+}
+#relative:hover{
+    left: 0px;
+}
+#absolute{
+height: 200px;
+width: 200px;
+background-color: red;
+position: absolute;
+right: 20px;
+top: 20px;
+    border: rgb(0, 0, 0) solid 2px;
+}
+
+hr{
+    margin: 10px;
+}
+
+
+
+.transform{
+    height: 100vh;
+    border: rgb(0, 0, 0) solid 2px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#object{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+} 
+#forbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#btn1, #btn2, #btn3, #btn4{
+
+    height: 50px;
+    width: 100px;
+    background-color: aqua;
+    border-radius: 5px;
+
+}
+
+
+
+/* --- Fixed Keyframes --- */
+@keyframes torotate {
+
+    /* Highly recommended to define 'from' for smoother tracking on hover */
+    from {
+        background-color: aqua;
+        transform: rotate(0deg);
+    }
+
+    to {
+        background-color: blue;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes toscale {
+    to {
+        transform: scale(2);
+    }
+}
+
+@keyframes toskew {
+    to {
+        transform: skew(30deg);
+    }
+}
+
+@keyframes totranslate {
+    to {
+        transform: translate(200px);
+        /* Fixed: Changed 'deg' to 'px' */
+    }
+}   
+
+/* 1. When #btn1 inside .transform is hovered, animate the #object */
+.transform:has(#btn1:hover) #object {
+    animation: torotate 2s ease forwards infinite;
+    
+}
+
+/* 2. When #btn2 inside .transform is hovered, animate the #object */
+.transform:has(#btn2:hover) #object {
+    animation: toscale 1s ease forwards;
+}
+
+/* 3. When #btn3 inside .transform is hovered, animate the #object */
+.transform:has(#btn3:hover) #object {
+    animation: toskew 1s ease forwards;
+}
+
+/* 4. When #btn4 inside .transform is hovered, animate the #object */
+.transform:has(#btn4:hover) #object {
+    animation: totranslate 1s ease forwards;
+}

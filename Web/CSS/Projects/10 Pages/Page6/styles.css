@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(10, 4, 4);
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f8fc;
+    min-height: 100vh;
+    background-image: url("./background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* width: 90vw;  */
+    
+}
+
+header {
+    height: 80px;
+    background:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+}
+
+
+#left{
+    display: flex;
+    gap: 40px;
+}
+
+
+.logo {
+    font-size: 1.5rem;
+}
+
+#uitemplate{
+    font-size: small;
+    color: rgb(147, 143, 143);
+}
+
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#navbar li a {
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+#buytemplates {
+    background-color: transparent;
+    background-color: rgb(52, 111, 52);
+    color: white;
+    height: 42px;
+    padding: 0 20px;
+    /* border-radius: 20px; */
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
+main{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    margin: 0 10vw;
+    gap: 30px;
+}
+
+.counts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+#trust{
+    font-weight: bold;
+}
+
+#info div p{
+    font-weight: bolder ;
+    font-size: 2.2rem;
+}
+
+.number{
+    color:rgb(52, 111, 52) ;
+    font-weight:600;
+    font-size: 1.3rem;  
+}
+
+.type{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#price-btn {
+    padding: 15px 30px;
+    border: 1px solid #d3cfcf;
+    border-radius: 40px;
+    background: #fff;
+    color: #777;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dropdown{
+    font-size: 20px;
+}
+
+#list1:hover {
+    background-color: red;
+    color: white;
+    transition: 3s ;
+}
+
+.info-box{
+    background-color: #bff6c4;
+    border: solid 1px green;
+    width: 500px;
+    position: fixed;
+    display: none;
+}
+
+#demo-info{
+    top: 70px;
+    left: 100px;
+}
+
+#page-info {
+    top: 70px;
+    left: 200px;
+}
+#template-info {
+    top: 70px;
+    left: 300px;
+}
+#navbar li:hover .info-box {
+    display: block;
+}
+

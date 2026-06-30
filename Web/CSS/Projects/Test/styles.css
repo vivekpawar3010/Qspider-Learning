@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+
+    background: #2d666d;
+
+    background-image:
+        linear-gradient(135deg,
+            #567f85,
+            #184e58);
+
+    overflow: hidden;
+}
+
+#mainbox {
+    width: 90vw;
+    height: 90vh;
+
+    background: white;
+
+    border-radius: 35px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+#leftside {
+    width: 55%;
+    height: 100%;
+
+    padding: 40px 50px;
+
+    background: #f5f7fb;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header {
+    width: 100%;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #1c4b53;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+}
+
+#maintext {
+    font-size: 4rem;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    max-width: 650px;
+
+    color: #174851;
+}
+
+#subtitle {
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    max-width: 520px;
+
+    color: #3b4f53;
+}
+
+#appointbox {
+    margin-top: 20px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    border: 2px solid #2f6167;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+#appointtitle {
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #174851;
+}
+
+#inputs {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.inputbox {
+    flex: 1;
+
+    height: 65px;
+
+    border: 2px solid #e6e6e6;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 18px;
+
+    background: #fafafa;
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+.inputbox:hover {
+    border-color: #c9c9c9;
+}
+
+.inputbox:focus-within {
+    border-color: #2f6167;
+
+    background: white;
+}
+
+.inputbox input,
+.inputbox select {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+
+    color: #444;
+}
+
+.inputbox select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    cursor: pointer;
+}
+
+.inputbox input[type="date"] {
+    cursor: pointer;
+}
+
+.inputbox input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+
+    position: absolute;
+
+    width: 100%;
+
+    left: 0;
+
+    cursor: pointer;
+}
+
+.inputbox i {
+    color: #999;
+
+    font-size: 16px;
+
+    margin-left: 10px;
+
+    pointer-events: none;
+}
+
+#searchbtn {
+    height: 65px;
+
+    padding: 0 35px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #b779d7;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#searchbtn:hover {
+    background: #9d5dc0;
+
+    transform: translateY(-2px);
+}
+
+#rightside {
+    width: 45%;
+
+    background: #184e58;
+
+    position: relative;
+
+    padding: 40px;
+
+    overflow: hidden;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 40px;
+}
+
+#navbar a {
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#clientbtn {
+    height: 48px;
+
+    padding: 0 24px;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#clientbtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#doctorsection {
+    position: relative;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circlebg {
+    position: absolute;
+
+    height: 520px;
+    width: 320px;
+
+    background: #d8d9df;
+
+    border-radius: 180px;
+
+    top: 120px;
+}
+
+#doctorsection img {
+    position: absolute;
+
+    height: 560px;
+
+    bottom: 40px;
+
+    z-index: 2;
+
+    object-fit: contain;
+}
+
+.floatingcard {
+    position: absolute;
+
+    background: white;
+
+    padding: 18px 22px;
+
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+
+    z-index: 5;
+}
+
+.floatingcard i {
+    font-size: 18px;
+}
+
+.cardtitle {
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #222;
+
+    margin-bottom: 3px;
+}
+
+.cardinfo {
+    font-size: 13px;
+
+    color: #555;
+}
+
+.card1 {
+    top: 180px;
+    left: 10px;
+}
+
+.card2 {
+    top: 270px;
+    right: 0;
+}
+
+.card3 {
+    left: 40px;
+    bottom: 220px;
+}
+
+.card4 {
+    right: 20px;
+    bottom: 90px;
+}
+
+.card3 i {
+    color: #d95374;
+}
+
+.card4 i {
+    color: #f6b800;
+}
+
+@media(max-width:1200px) {
+
+    #mainbox {
+        width: 100%;
+
+        height: auto;
+
+        flex-direction: column;
+    }
+
+    #leftside,
+    #rightside {
+        width: 100%;
+    }
+
+    #maintext {
+        font-size: 3rem;
+    }
+
+    #doctorsection {
+        min-height: 700px;
+    }
+}
+
+@media(max-width:768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    #leftside {
+        padding: 30px;
+    }
+
+    #maintext {
+        font-size: 2.2rem;
+    }
+
+    #subtitle {
+        font-size: 16px;
+    }
+
+    #appointbox {
+        padding: 25px;
+    }
+
+    #inputs {
+        flex-direction: column;
+    }
+
+    .inputbox {
+        width: 100%;
+    }
+
+    #searchbtn {
+        width: 100%;
+    }
+
+    #navbar {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    #doctorsection img {
+        height: 420px;
+    }
+
+    #circlebg {
+        height: 400px;
+        width: 240px;
+    }
+
+    .floatingcard {
+        transform: scale(0.85);
+    }
+}

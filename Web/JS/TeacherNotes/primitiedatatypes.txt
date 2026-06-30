@@ -1,0 +1,74 @@
+// let a = 100.101;
+// console.log(a);
+// console.log(typeof a);
+
+// const b = true;
+// console.log(b);
+// console.log(typeof b);
+
+// let x = null;
+// console.log(x);
+// console.log(typeof x);
+
+// let a = 100;
+// a = null;
+// console.log(a);
+// console.log(typeof a);
+
+//Double quotes
+// let x = "Hello";
+// console.log(x);
+
+// //single quotes
+// let y = 'Javascript';
+// console.log(y);
+
+// //Backticks
+// let z = `Webtech`;
+// console.log(z);
+
+// let x = 7894641231231654564156141611231231646312n;
+// console.log(x);
+// let y = Number.MAX_SAFE_INTEGER;
+// console.log(y);
+
+// let a = 10;
+// console.log(typeof a);
+
+// let a = Symbol("hi");
+// console.log(a);
+// let b = Symbol("hi");
+// console.log(a == b);
+
+// let a = 100;
+// let b = 200;
+// let c = a + b;
+// console.log(a + b);
+
+// let a = "100";
+// let b = 100;
+// b = "100";
+// console.log(a === b);
+
+// let a = 200;
+// let b = 200;
+// if (a < b) {
+//   console.log("Yes");
+// } else if (a > b) {
+//   console.log(a);
+// } else {
+//   alert("Both are Equal");
+// }
+
+// let a = confirm("Do You want to logout");
+// console.log(a);
+
+// let x = prompt("Enter a name");
+// let y = Number(x);
+// console.log(typeof y);
+
+// let a = 10;
+// let b = 10n;
+
+// console.log(a === b);
+// console.log(Number.MAX_SAFE_INTEGER);

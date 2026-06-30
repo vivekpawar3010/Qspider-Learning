@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Removed red border to match final design */
+    color: #111;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./desktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    overflow: hidden;
+    /* Prevents scrolling if background slightly exceeds viewport */
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    /* Spreads out Left, Middle, and Right sections */
+    align-items: flex-start;
+    padding: 40px 80px;
+    /* Added padding to push items away from the screen edge */
+}
+
+#logoconect {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 130px;
+    /* Creates the large vertical space between Logo and CONNECT icons */
+}
+
+#logoname {
+    display: flex;
+    align-items: center;
+    /* Aligns the logo image and text properly */
+    gap: 15px;
+}
+
+#logoname h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#tagline {
+    font-size: 14px;
+    color: #555;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+#connect {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#connect i {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#nav {
+    margin-left: 50px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#navbar li:first-child a {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #111;
+}
+
+#signupbtns {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 28px;
+    border-radius: 50px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#login {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+#signin {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    /* Centers the paragraph text */
+}
+
+#punchline {
+    font-size: 64px;
+    /* Increased significantly to match the design */
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+#infoline {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    /* Space between text and button */
+}
+
+#strtexplor {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 14px 32px;
+    font-size: 16px;
+}

@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(200, 244, 200);
+    height: 100vh;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        height: 60px;
+    background-color: white;
+}
+
+#left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+}
+#right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+
+img{
+    height: 50px;
+    width: 50px;
+    margin: 5px 0  0 5px ;
+}
+
+select{
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+}
+
+#search{
+    all:unset;
+}
+
+#serachbar{
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+#signin{
+    background-color: rgb(29, 174, 34);
+    border: none;
+    height: 40px;
+    padding: 0 25px 0 25px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    
+}
+
+#signin:hover{
+    background-color: rgb(19, 112, 22);
+}
+
+#navbar{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 5px 10px 0 10px;
+    background-color: black;
+    height: 30px;
+    /* border: red solid; */
+}
+
+.sub{
+    height: 100%;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 5  00;
+    padding: 0 15px 0 15px;
+}
+
+.sub:hover{
+    background-color: rgb(95, 94, 94);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#info{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 20px;
+}
+
+.signup, #trust{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.signup{
+    gap: 30px;
+}
+
+#trust{
+    gap: 5px;
+}
+
+.signup h1{
+    font-size: 4rem;
+}
+.signup p{
+    font-size: 1.5rem;
+}
+
+#profile{
+    /* border: red solid; */
+    width: 100%;
+    height: 220px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.profiledata{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255);
+    height: 100%;
+    /* border: black solid; */
+}
+
+#profilefoto{
+    width: 25%;
+    margin: 0 20px 0 0 ;
+}
+
+
+#streak{
+    width: 45%;
+}
+
+#badge{
+    width: 35%;
+}
+
+

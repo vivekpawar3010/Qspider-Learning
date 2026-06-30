@@ -21,13 +21,7 @@ public class TestTotate2d {
     public static char[][] rotate(char[][] matrix) {
         int m = matrix.length;
         int n = matrix[0].length;
-        char[][] rotated = new char[n][m];
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                rotated[j][m - 1 - i] = matrix[i][j];
-            }
-        }
-        return rotated;
+        d
     }
 
     public static char[][] updateOnRule(char[][] matrix) {

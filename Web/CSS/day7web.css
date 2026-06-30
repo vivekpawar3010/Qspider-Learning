@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;   
+}
+
+
+#p1{
+    text-decoration: double underline;
+    font-size: 2rem;
+}
+
+#p2 {
+    text-decoration: dotted line-through underline;
+    font-size: 2rem;
+}
+#p3 {
+    text-decoration: wavy underline;
+    font-size: 2rem;
+}
+#p4 {
+    text-decoration:solid overline;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-size:x-large;
+    text-shadow: 0px 2px -2px rgb(86, 92, 86);
+}
+
+@media (max-width:900px) {
+    html{
+        font-size: 8px;
+    }
+}
+
+.unit{
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.squre{
+    height: 19vh;
+    margin-top: 1vh;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.inner{
+    width: 50%;
+    text-align: center
+}
+#inner2{
+    border-left: 2px solid black;
+    height: 100%;
+    margin-left: 20%;
+    -ms-text-justify: center;
+}
+
+.testbgimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testbgimg div{
+    height: 200px;
+    width: 500px;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+
+#img1{
+    background-image: url("/Web/resources/images/car.png");
+    background-repeat: no-repeat;
+}
+
+#img2{
+    background-image: url("/Web/resources/images/car.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: start;
+}
+
+#img3{
+    background-image: url("/Web/resources/images/car.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: start;
+}
+
+#img4{
+    background-image: url("/Web/resources/images/car.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: end;
+}
+
+#img5{
+    background-image: url("/Web/resources/images/car.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}

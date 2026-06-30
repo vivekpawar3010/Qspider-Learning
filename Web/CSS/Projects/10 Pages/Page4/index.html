@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 4 -MedKit UI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main id="mainbox">
+
+        <section id="leftside">
+
+            <header id="header">
+
+                <h2 id="logo">
+                    MedKit
+                </h2>
+
+            </header>
+
+            <section id="content">
+
+                <h1 id="trust">
+                    Connect with top rated doctors in just a few clicks
+                </h1>
+
+                <p id="subtitle">
+                    Select your doctor and preferred time slot to book your appointment
+                </p>
+
+                <div id="appointbox">
+
+                    <h3>
+                        Book your appointment
+                    </h3>
+
+                    <div id="inputs">
+
+                        <div class="inputbox">
+                            <!-- <label for="specialty">Specialty</label> -->
+                            <select name="specialty" id="specialty">
+                                <option value="" disabled selected>Select Specialty</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="dentist">Dentist</option>
+                                <option value="neurology">Neurology</option>
+                            </select>
+
+                        </div>
+
+                        <div id="location" class="inputbox">
+                            <input type="text" placeholder="Location    ">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div class="inputbox">
+                            <input type="text" placeholder="Date">
+                            <i class="fa-regular fa-calendar"></i>
+                        </div>
+
+                        <button id="searchbtn">
+                            Search
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <section id="rightside">
+
+            <nav id="navbar">
+
+                <a href="#">Home</a>
+                <a href="#">Find a doctor</a>
+                <a href="#">About us</a>
+
+                <button id="clientbtn">
+                    Client Area
+                </button>
+
+            </nav>
+
+            <section id="doctorsection">
+
+                <div id="circlebg">
+
+                </div>
+
+
+                <div class="floatingcard card1">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <div>
+                        <h4>200,000+</h4>
+                        <p>Registered Patients</p>
+                    </div>
+                </div>
+
+                <div class="floatingcard card2">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <div>
+                        <h4>5,000+</h4>
+                        <p>Doctors Online</p>
+                    </div>
+                </div>
+
+                <div class="floatingcard card3">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        <h4>Join Today!</h4>
+                    </div>
+                </div>
+
+                <div class="floatingcard card4">
+                    <i class="fa-solid fa-star"></i>
+                    <div>
+                        <h4>#1 Worldwide</h4>
+                        <p>Medical Website</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

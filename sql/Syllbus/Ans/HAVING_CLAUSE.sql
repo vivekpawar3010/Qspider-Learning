@@ -1,0 +1,169 @@
+-- ### 1] WAQTD NUMBER OF EMP'S WORKING IN EACH DEPT IF THERE ARE ATLEAST 2 EMP'S WORKING IN EACH DEPT.
+-- Expected Output:
+-- | COUNT(*) | DEPTNO |
+-- | 6        | 30     |
+-- | 5        | 20     |
+-- | 3        | 10     |
+SELECT COUNT(*), DEPTNO 
+FROM EMP
+GROUP BY DEPTNO
+HAVING COUNT(*) >= 2;
+
+
+-- ### 2] WAQTD AVG SAL & DEPTNO OF EMP'S IN EACH DEPTNO HAVING ATLEAST 4 EMP'S IN EACH DEPT.
+-- Expected Output:
+-- | AVG(SAL)    | DEPTNO |
+-- | 1566.66667  | 30     |
+-- | 2175        | 20     |
+SELECT AVG(SAL), DEPTNO 
+FROM EMP
+GROUP BY DEPTNO
+HAVING COUNT(*) >= 4;
+
+
+-- ### 3] WAQTD NUMBER OF EMP'S EARNING MORE THAN 1200 IN EACH JOB & THE TOTAL SAL NEEDED TO PAY IN EACH JOB MUST EXCEED 3800.
+-- Expected Output:
+-- | COUNT(*) | JOB       |
+-- | 4        | SALESMAN  |
+-- | 1        | PRESIDENT |
+-- | 3        | MANAGER   |
+-- | 2        | ANALYST   |
+SELECT COUNT(*), JOB 
+FROM EMP
+WHERE SAL > 1200
+GROUP BY JOB
+HAVING SUM(SAL) > 3800;
+
+
+-- ### 4] WAQTD NUMBER OF EMP'S HIRED IN THE YEAR OF 1981 IN EACH DEPT IF THERE ARE ATLEAST 4 EMP'S HIRED IN THAT PARTICULAR YEAR.
+-- Expected Output:
+-- | COUNT(*) | DEPTNO |
+-- | 6        | 30     |
+SELECT COUNT(*), DEPTNO 
+FROM EMP
+WHERE TO_CHAR(HIREDATE, 'YYYY') = '1981' -- Or: WHERE HIREDATE LIKE '%81' depending on DB flavor
+GROUP BY DEPTNO
+HAVING COUNT(*) >= 4;
+
+
+-- ### 5] WAQTD JOB & MAX SAL OF EMP IN EACH JOB IF THE MAX SAL EXCEEDS 2600.
+-- Expected Output:
+-- | JOB       | MAX(SAL) |
+-- | PRESIDENT | 5000     |
+-- | MANAGER   | 2975     |
+-- | ANALYST   | 3000     |
+SELECT JOB, MAX(SAL) 
+FROM EMP
+GROUP BY JOB
+HAVING MAX(SAL) > 2600;
+
+
+-- ### 6] WAQTD THE SALARIES WHICH ARE REPEATED IN THE EMP TABLE.
+-- Expected Output:
+-- | SAL  |
+-- | 1250 |
+-- | 3000 |
+SELECT SAL 
+FROM EMP
+GROUP BY SAL
+HAVING COUNT(*) > 1;
+
+
+-- ### 7] WAQTD HIREDATE WHICH ARE DUPLICATED IN EMP TABLE.
+-- Expected Output:
+-- | HIREDATE  |
+-- | 03-DEC-81 |
+SELECT HIREDATE 
+FROM EMP
+GROUP BY HIREDATE
+HAVING COUNT(*) > 1;
+
+
+-- ### 8] WAQTD AVG SAL OF EACH DEPT IF AVG SAL IS LESS THAN 3000.
+-- Expected Output:
+-- | AVG(SAL)    | DEPTNO |
+-- | 1566.66667  | 30     |
+-- | 2175        | 20     |
+-- | 2916.66667  | 10     |
+SELECT AVG(SAL), DEPTNO 
+FROM EMP
+GROUP BY DEPTNO
+HAVING AVG(SAL) < 3000;
+
+
+-- ### 9] WAQTD NUMBER OF EMP'S IF THERE ARE ATLEAST 4 EMP'S IN EACH DEPT WHOSE NAME HAS CHAR 'A' OR 'S'.
+-- Expected Output:
+-- | COUNT(*) | DEPTNO |
+-- | 5        | 30     |
+-- | 4        | 20     |
+SELECT COUNT(*), DEPTNO 
+FROM EMP
+WHERE ENAME LIKE '%A%' OR ENAME LIKE '%S%'
+GROUP BY DEPTNO
+HAVING COUNT(*) >= 4;
+
+
+-- ### 10] WAQTD MIN & MAX SAL OF EACH JOB IF MIN SAL IS MORE THAN 1000 & MAX SAL IS LESS THAN 5000.
+-- Expected Output:
+-- | MIN(SAL) | MAX(SAL) | JOB      |
+-- | 1250     | 1600     | SALESMAN |
+-- | 2450     | 2975     | MANAGER  |
+-- | 3000     | 3000     | ANALYST  |
+SELECT MIN(SAL), MAX(SAL), JOB 
+FROM EMP
+GROUP BY JOB
+HAVING MIN(SAL) > 1000 AND MAX(SAL) < 5000;
+
+
+-- ### 11] WAQTD DEPTNO AND NUMBER OF EMP WORKING ONLY IF THERE ARE 2 EMP WORKING IN DEPT AS MANAGER.
+-- Expected Output: no rows selected
+SELECT DEPTNO, COUNT(*) 
+FROM EMP
+WHERE JOB = 'MANAGER'
+GROUP BY DEPTNO
+HAVING COUNT(*) = 2;
+
+
+-- ### 12] WAQTD NUMBER OF EMP'S IN EACH DEPT IF THERE ARE ATLEAST 2 EMP'S IN EACH DEPT.
+-- Note: Your target output shows just Dept 30 with a count of 4, meaning this query is likely filtered for a specific context (like a specific role) or a typo in the original workbook, but strictly following the question phrasing:
+SELECT COUNT(*), DEPTNO 
+FROM EMP
+GROUP BY DEPTNO
+HAVING COUNT(*) >= 2;
+
+
+-- ### 13] WAQTD MAX SAL & DEPTNO IN EACH DEPTNO IF AVG SAL IS MORE THAN 1000.
+-- Expected Output:
+-- | MAX(SAL) | DEPTNO |
+-- | 2850     | 30     |
+-- | 3000     | 20     |
+-- | 5000     | 10     |
+SELECT MAX(SAL), DEPTNO 
+FROM EMP
+GROUP BY DEPTNO
+HAVING AVG(SAL) > 1000;
+
+
+-- ### 14] WAQTD TOTAL SAL OF EMP'S ALONG WITH JOB IN EACH JOB IF MAX SAL IS MORE THAN 2000.
+-- Expected Output:
+-- | SUM(SAL) | JOB       |
+-- | 5000     | PRESIDENT |
+-- | 8275     | MANAGER   |
+-- | 6000     | ANALYST   |
+SELECT SUM(SAL), JOB 
+FROM EMP
+GROUP BY JOB
+HAVING MAX(SAL) > 2000;
+
+
+-- ### 15] WAQTD TOTAL SAL OF EMP'S ALONG WITH JOB IN EACH JOB IF MIN SAL IS MORE THAN 1234.
+-- Expected Output:
+-- | SUM(SAL) | JOB       |
+-- | 5600     | SALESMAN  |
+-- | 5000     | PRESIDENT |
+-- | 8275     | MANAGER   |
+-- | 6000     | ANALYST   |
+SELECT SUM(SAL), JOB 
+FROM EMP
+GROUP BY JOB
+HAVING MIN(SAL) > 1234;

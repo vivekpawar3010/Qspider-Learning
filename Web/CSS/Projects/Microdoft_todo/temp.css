@@ -1,0 +1,14 @@
+#ser{
+    border:red 2px solid
+}
+#input{
+    height: 30px;
+    border: black solid 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    margin-left: 20px;
+
+}
+

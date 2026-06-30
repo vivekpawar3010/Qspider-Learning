@@ -1,0 +1,195 @@
+
+-- ### 1] WAQTD NAMES OF ALL THE EMP'S WHOSE NAME STARTS WITH CHAR 'A'.
+
+-- **O/P:**
+
+-- ENAME
+-- ----------
+-- ALLEN
+-- ADAMS
+
+SELECT ENAME FROM EMP
+WHERE SUBSTR(ENAME, 1, 1) = 'A';
+
+
+
+-- ### 2] WAQTD NAME AND DESIGNATION OF THE EMP WHOSE NAME ENDS WITH CHAR 'E'.
+
+-- -- **O/P:**
+-- ENAME      JOB
+-- ---------- ---------
+-- BLAKE      MANAGER
+
+SELECT ENAME, JOB FROM EMP
+WHERE SUBSTR(ENAME, -1) = 'E';
+
+-- ### 3] WAQTD NAMES OF EMP'S WHOSE NAME IS HAVING EXACTLY 5 CHARACTERS.
+
+-- **O/P:**
+-- ENAME
+-- ----------
+-- SMITH
+-- ALLEN
+-- JONES
+-- BLAKE
+-- CLARK
+-- SCOTT
+-- ADAMS
+-- JAMES
+
+-- 8 rows selected.
+
+
+SELECT ENAME FROM EMP
+WHERE LENGTH(ENAME) = 5;
+
+-- ### 4] WAQTD DETAILS OF THE EMP'S WHOSE DESIGNATION HAVING CHAR 'K' IN THE LAST.
+
+-- **O/P:**
+
+
+--      EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO
+-- ---------- ---------- --------- ---------- --------- ---------- ---------- ----------
+--       7369 SMITH      CLERK           7902 17-DEC-80        800                    20
+--       7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20
+--       7900 JAMES      CLERK           7698 03-DEC-81        950                    30
+--       7934 MILLER     CLERK           7782 23-JAN-82       1300                    10
+
+SELECT * FROM EMP
+WHERE SUBSTR(JOB, -1) = 'K';
+-- ### 5] WAQTD NAMES OF EMP'S WHOSE NAME HAVING CHAR 'C' IN THE 2ND PLACE.
+
+-- **O/P:**
+-- ENAME
+-- ----------
+-- SCOTT
+
+SELECT ENAME FROM EMP
+WHERE SUBSTR(ENAME, 2, 1) = 'C';
+
+
+-- ### 6] WAQTD NAMES OF EMP'S WHOSE NAME HAVING CHAR 'M' IN THE 4TH PLACE.
+
+-- ENAME
+-- ----------
+-- ADAMS
+
+SELECT ENAME FROM EMP
+WHERE SUBSTR(ENAME, 4, 1) = 'M';
+
+
+-- ### 7] WAQTD NAMES OF EMP'S IN LOWER CASE WHOSE NAME IS HAVING STRING 'ER' AT THE LAST.
+
+-- **O/P:**
+-- empname
+-- ----------
+-- turner
+-- miller
+
+SELECT LOWER(ENAME) AS empname FROM EMP
+WHERE SUBSTR(ENAME, -2) = 'ER';
+
+
+-- ### 8] WAQTD NAMES OF EMP'S IN UPPER CASE IF HIS DESIGNATION HAVING STRING 'DEN' FROM 6TH PLACE.
+
+-- **O/P:**
+-- UPPER(ENAM
+-- ----------
+-- KING
+
+SELECT UPPER(ENAME) FROM EMP 
+WHERE SUBSTR(JOB, 6, 3) = 'DEN';
+
+
+-- ### 9] WAQTD NAMES ONLY 1ST CHAR IN CAPITAL IF THE NAME IS HAVING CHAR 'I' IN THE 5TH LAST CHAR.
+
+-- **O/P:**
+-- INITCAP(EN
+-- ----------
+-- Martin
+
+SELECT INITCAP(ENAME) FROM EMP 
+WHERE SUBSTR(ENAME, -5, 1) = 'I';
+
+
+-- ### 10] WAQTD NAMES OF EMP'S ALONG WITH LAST 3 CHAR'S OF THE NAME IF NAME ENDS WITH CHAR 'N' OR DESIGNATION ENDS WITH CHAR 'R'.
+
+-- **O/P:**
+-- ENAME      SUB
+-- ---------- ---
+-- ALLEN      LEN
+-- JONES      NES
+-- MARTIN     TIN
+-- BLAKE      AKE
+-- CLARK      ARK
+
+SELECT ENAME, SUBSTR(ENAME, -3) AS SUB FROM EMP 
+WHERE SUBSTR(ENAME, -1) = 'N' OR SUBSTR(JOB, -1) = 'R';
+
+
+-- ### 11] WAQTD NAME AND JOINING DATE OF THE EMP WHOSE JOINING MONTH STARTS WITH 'J'.
+
+-- **O/P:**
+-- | ENAME | HIREDATE |
+-- | --- | --- |
+-- | CLARK | 09-JUN-81 |
+-- | MILLER | 23-JAN-82 |
+
+SELECT ENAME, HIREDATE FROM EMP
+WHERE SUBSTR(TO_CHAR(HIREDATE, 'MON'), 1, 1) = 'J';
+
+
+-- ### 12] WAQTD NAME IN LOWER CASE, LENGTH OF ENAME & JOINING DATE OF EMP'S WHOSE JOINING YEAR ENDS WITH CHAR '2'.
+
+-- **O/P:**
+-- | LOWER(ENAME) | LENGTH(ENAME) | HIREDATE |
+-- | --- | --- | --- |
+-- | miller | 6 | 23-JAN-82 |
+
+SELECT LOWER(ENAME), LENGTH(ENAME), HIREDATE FROM EMP
+WHERE SUBSTR(TO_CHAR(HIREDATE, 'YYYY'), -1) = '2';
+
+
+-- ### 13] WAQTD NAMES OF EMP'S IN REVERSE IF EMP'S DESIGNATION HAVING STRING 'LYS' FROM 4TH LAST PLACE.
+
+-- **O/P:**
+-- | REVERSE(ENAME) |
+-- | --- |
+-- | TTOCS |
+-- | DROF |
+
+SELECT REVERSE(ENAME) FROM EMP
+WHERE SUBSTR(JOB, -4, 3) = 'LYS';
+
+
+-- ### 14] WAQTD NAMES IN LOWER CASE, DESIGNATION WITH ONLY 1ST CHAR IN CAPITAL IF THE NAME HAVING EXACTLY 6 CHAR'S.
+
+-- **O/P:**
+-- | LOWER(ENAME) | INITCAP(JOB) |
+-- | --- | --- |
+-- | martin | Salesman |
+-- | turner | Salesman |
+-- | miller | Clerk |
+
+SELECT LOWER(ENAME), INITCAP(JOB) FROM EMP
+WHERE LENGTH(ENAME) = 6;
+
+
+-- ### 15] WAQTD NAMES IN REVERSE IF THE NAME IS HAVING CHAR 'U' IN THE 2ND PLACE OR THE EMP'S SALARIES 3RD CHAR IS 0 (ZERO).
+
+-- **O/P:**
+-- | REVERSE(ENAME) |
+-- | --- |
+-- | HTIMS |
+-- | NELLA |
+-- | TTOCS |
+-- | GNIK |
+-- | RENRUT |
+-- | SMADA |
+-- | SEMAJ |
+-- | DROF |
+-- | RELLIM |
+
+SELECT REVERSE(ENAME) FROM EMP
+WHERE SUBSTR(ENAME, 2, 1) = 'U' 
+   OR SUBSTR(TO_CHAR(SAL), 3, 1) = '0';
