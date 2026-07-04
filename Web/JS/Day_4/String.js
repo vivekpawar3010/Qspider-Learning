@@ -48,3 +48,7 @@ let a = y.padStart(10,"a"); // add the spcaes at the start
 console.log(a);
 let b = y.padEnd(10, 'b'); // add the spcaes at the end
 console.log(b);
+locateionn
+
+
+

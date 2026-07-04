@@ -12,8 +12,9 @@ public class CarGameDriver {
 		System.out.println("----------------------------------------------");
 		fast.increseSpeed(50);
 		System.out.println("----------------------------------------------");
-		
+		fast.reverseGear();
 		System.out.println("----------------------------------------------");
+		fast.booster();
 		
 	}
 }

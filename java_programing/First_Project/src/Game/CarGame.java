@@ -71,6 +71,16 @@ public class CarGame {
 //		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
 	}
 	
+	public void booster() {
+		System.out.println("Going Forward with --- ");
+		screenDisplay();
+	}
+	
+	public void reverseGear() {
+		System.out.println("Going Backward with --- ");
+		screenDisplay();
+	}
+	
 	public void applyBreak(int time, int presure) {
 		speed -= (time * presure);
 		if(speed < 0) speed = 0;
@@ -79,11 +89,16 @@ public class CarGame {
 		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
 	}
 	
-	public void reFule(int liter) {
+	public void reFule(float liter) {
 		if(currFule + liter >= maxFule) {
-			
+			float remFule = (currFule + liter) - maxFule;
+			currFule = maxFule;
+			System.out.println("The remaing fule in the barrel is " + remFule + " liters");
+			System.out.println("Suggest to keep it in the car Trunk");
 		}
 	}
+	
+	
 	
 	
 	
