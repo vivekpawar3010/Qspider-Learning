@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#productsContianer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f0f2f5; /* Light neutral canvas for the page */
+    padding: 20px;
+}
+
+.card{
+    border-radius: 12px;
+    margin: 15px;
+    padding: 20px; 
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    /* FIXED: Clean light gradient ensuring readable text on top */
+    background-image: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    /* Soft, non-distracting shadow for better cognitive definition */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+    border: 1px solid #e2e8f0;
+}
+
+.card:hover{
+    transform:scale(1.2) 1s;
+    
+}
+
+.title{
+    font-size: 1.5rem; 
+    font-weight: 700;
+    color: #0a192f; /* FIXED: High-contrast Deep Navy (Exceeds WCAG AAA requirements) */
+    text-align: center;
+}
+
+.info{
+    font-size: 0.9rem;
+    text-align: left; 
+    color: #334155; /* FIXED: Accessible dark slate text */
+    line-height: 1.6; /* Optimal line height for reading ease */
+}
+
+.price{
+    font-size: 1.35rem;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #0f172a; /* FIXED: High contrast black-blue */
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.cart-btn{
+    min-height: 44px; /* Essential mobile touch target minimum size */
+    width: 180px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0066cc; /* FIXED: Vibrant blue that hits a flawless 4.5+:1 ratio with white text */
+    color: #ffffff; 
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Clear visual state changes for keyboard navigation and mouse users */
+.cart-btn:hover {
+    background-color: #004ca3; /* Darker blue shift for clear action confirmation */
+}
+
+.cart-btn:focus-visible {
+    outline: 3px solid #ffaa00; /* Distinct focus ring for keyboard users */
+    outline-offset: 3px;
+}
+

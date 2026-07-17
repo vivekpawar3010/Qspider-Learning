@@ -12,7 +12,7 @@ public class UniqueNum {
             }
             if (ct >= 2)
                 return false;
-        }
+        }   
         return true;
     }
 

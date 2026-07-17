@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+}
+body{
+    height: 200vh;
+    width: 100%;
+}
+
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    /* width: aurolk; */
+    justify-content: center;
+    align-items: center;
+}
+
+#nameerror, #passerror{
+    display: none;
+}
