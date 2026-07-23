@@ -1,46 +1,28 @@
-// tasks.java
+// 23 july
+// 1) freq of ele
+// 2) distinct ele
+// 3) duplicate lee
+// 4) Unique ele
 
-// // array travesing with 3 loops 
-// // array initalise form user
-// // innitialise and store 10 to 1000 vlaues
-// // store a to z alphabates
-// // store z to a alphabates
+// same 4 for the 
+	// int arr, char arr, stirng arr
 
-// // size = 10 {
-// 	use the infinite loop
-// 	send the number 
-// }
+// first highest repeating ele 
+// second highest repeaing ele
+// third highest repeaing ele
 
-// // size = 10 {
-// 	user enter the number
-// 	store the multiflication table of it
-// }
-
-// // random numver size= any{
-// 	store the random aphabest to it 
-// 	can duplicates
-// }
-
-// // random numver size= any{
-// 	store the random aphabest to it 
-// 	can duplicates
-// }
+// same 3 for int arr, char arr , string arr
 
 
-// // random numver size= 20{
-// 	store the random aphabest to it 
-// 	digit 2
-// 	no duplicates
+// first smallest repeating ele 
+// second smallest repeaing ele
+// third smallest repeaing ele
 
-// }
+// same 3 for int arr, char arr , string arr
 
+// total 30
 
-// [1,2,3,4,5,6,7,8,9] give the sum of this elements
-// product of the elemetn in teh array
-// avg of the element int eh array
-//print the even element in the given array
-//print teh odd element
-// print the sum of even ele and odd ele
+// find nth highest repeating element
+// find nth lowest repeating element
 
-
-// take the random array and give the sum of the even element
+// total 83 from start to now
