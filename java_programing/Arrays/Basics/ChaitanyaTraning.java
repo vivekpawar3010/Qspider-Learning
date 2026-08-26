@@ -23,7 +23,7 @@ class ChaitanyaTraning{
 		for(int it = 1; it <= k; it++){
 			int j = 0;
 			for(int i = 0; i < num.length - it;i++){
-				if(num[j] < num[i]){
+					if(num[j] < num[i]){
 					j = i;
 					// int temp = num[i];
 					// num[i] = num[i + 1];

@@ -1,0 +1,689 @@
+{
+  "allUsers": [
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000001",
+      "address": "House 2, Mumbai, Maharashtra",
+      "id": "user-002"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000002",
+      "address": "House 3, Nashik, Maharashtra",
+      "id": "user-003"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000003",
+      "address": "House 4, Solapur, Maharashtra",
+      "id": "user-004"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000004",
+      "address": "House 5, Satara, Maharashtra",
+      "id": "user-005"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000005",
+      "address": "House 6, Kolhapur, Maharashtra",
+      "id": "user-006"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000006",
+      "address": "House 7, Nagpur, Maharashtra",
+      "id": "user-007"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000007",
+      "address": "House 8, Aurangabad, Maharashtra",
+      "id": "user-008"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000008",
+      "address": "House 9, Pune, Maharashtra",
+      "id": "user-009"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000009",
+      "address": "House 10, Mumbai, Maharashtra",
+      "id": "user-010"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000010",
+      "address": "House 11, Nashik, Maharashtra",
+      "id": "user-011"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000011",
+      "address": "House 12, Solapur, Maharashtra",
+      "id": "user-012"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000012",
+      "address": "House 13, Satara, Maharashtra",
+      "id": "user-013"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000013",
+      "address": "House 14, Kolhapur, Maharashtra",
+      "id": "user-014"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000014",
+      "address": "House 15, Nagpur, Maharashtra",
+      "id": "user-015"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000015",
+      "address": "House 16, Aurangabad, Maharashtra",
+      "id": "user-016"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000016",
+      "address": "House 17, Pune, Maharashtra",
+      "id": "user-017"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000017",
+      "address": "House 18, Mumbai, Maharashtra",
+      "id": "user-018"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000018",
+      "address": "House 19, Nashik, Maharashtra",
+      "id": "user-019"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000019",
+      "address": "House 20, Solapur, Maharashtra",
+      "id": "user-020"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000020",
+      "address": "House 21, Satara, Maharashtra",
+      "id": "user-021"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000036",
+      "address": "House 37, Satara, Maharashtra",
+      "id": "user-037"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000037",
+      "address": "House 38, Kolhapur, Maharashtra",
+      "id": "user-038"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000038",
+      "address": "House 39, Nagpur, Maharashtra",
+      "id": "user-039"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000039",
+      "address": "House 40, Aurangabad, Maharashtra",
+      "id": "user-040"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000040",
+      "address": "House 41, Pune, Maharashtra",
+      "id": "user-041"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000041",
+      "address": "House 42, Mumbai, Maharashtra",
+      "id": "user-042"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000105",
+      "address": "House 106, Mumbai, Maharashtra",
+      "id": "user-106"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000114",
+      "address": "House 115, Nashik, Maharashtra",
+      "id": "user-115"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000115",
+      "address": "House 116, Solapur, Maharashtra",
+      "id": "user-116"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000116",
+      "address": "House 117, Satara, Maharashtra",
+      "id": "user-117"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000117",
+      "address": "House 118, Kolhapur, Maharashtra",
+      "id": "user-118"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000118",
+      "address": "House 119, Nagpur, Maharashtra",
+      "id": "user-119"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000119",
+      "address": "House 120, Aurangabad, Maharashtra",
+      "id": "user-120"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000120",
+      "address": "House 121, Pune, Maharashtra",
+      "id": "user-121"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000121",
+      "address": "House 122, Mumbai, Maharashtra",
+      "id": "user-122"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000122",
+      "address": "House 123, Nashik, Maharashtra",
+      "id": "user-123"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000123",
+      "address": "House 124, Solapur, Maharashtra",
+      "id": "user-124"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000124",
+      "address": "House 125, Satara, Maharashtra",
+      "id": "user-125"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000125",
+      "address": "House 126, Kolhapur, Maharashtra",
+      "id": "user-126"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000126",
+      "address": "House 127, Nagpur, Maharashtra",
+      "id": "user-127"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000127",
+      "address": "House 128, Aurangabad, Maharashtra",
+      "id": "user-128"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000128",
+      "address": "House 129, Pune, Maharashtra",
+      "id": "user-129"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000129",
+      "address": "House 130, Mumbai, Maharashtra",
+      "id": "user-130"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000130",
+      "address": "House 131, Nashik, Maharashtra",
+      "id": "user-131"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000131",
+      "address": "House 132, Solapur, Maharashtra",
+      "id": "user-132"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000132",
+      "address": "House 133, Satara, Maharashtra",
+      "id": "user-133"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000133",
+      "address": "House 134, Kolhapur, Maharashtra",
+      "id": "user-134"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000134",
+      "address": "House 135, Nagpur, Maharashtra",
+      "id": "user-135"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000135",
+      "address": "House 136, Aurangabad, Maharashtra",
+      "id": "user-136"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000136",
+      "address": "House 137, Pune, Maharashtra",
+      "id": "user-137"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000137",
+      "address": "House 138, Mumbai, Maharashtra",
+      "id": "user-138"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000138",
+      "address": "House 139, Nashik, Maharashtra",
+      "id": "user-139"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000139",
+      "address": "House 140, Solapur, Maharashtra",
+      "id": "user-140"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000140",
+      "address": "House 141, Satara, Maharashtra",
+      "id": "user-141"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000141",
+      "address": "House 142, Kolhapur, Maharashtra",
+      "id": "user-142"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000142",
+      "address": "House 143, Nagpur, Maharashtra",
+      "id": "user-143"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000143",
+      "address": "House 144, Aurangabad, Maharashtra",
+      "id": "user-144"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000144",
+      "address": "House 145, Pune, Maharashtra",
+      "id": "user-145"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000145",
+      "address": "House 146, Mumbai, Maharashtra",
+      "id": "user-146"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000146",
+      "address": "House 147, Nashik, Maharashtra",
+      "id": "user-147"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000147",
+      "address": "House 148, Solapur, Maharashtra",
+      "id": "user-148"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000148",
+      "address": "House 149, Satara, Maharashtra",
+      "id": "user-149"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000149",
+      "address": "House 150, Kolhapur, Maharashtra",
+      "id": "user-150"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000150",
+      "address": "House 151, Nagpur, Maharashtra",
+      "id": "user-151"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000151",
+      "address": "House 152, Aurangabad, Maharashtra",
+      "id": "user-152"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000152",
+      "address": "House 153, Pune, Maharashtra",
+      "id": "user-153"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000153",
+      "address": "House 154, Mumbai, Maharashtra",
+      "id": "user-154"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000154",
+      "address": "House 155, Nashik, Maharashtra",
+      "id": "user-155"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000155",
+      "address": "House 156, Solapur, Maharashtra",
+      "id": "user-156"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000156",
+      "address": "House 157, Satara, Maharashtra",
+      "id": "user-157"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000157",
+      "address": "House 158, Kolhapur, Maharashtra",
+      "id": "user-158"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000158",
+      "address": "House 159, Nagpur, Maharashtra",
+      "id": "user-159"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000159",
+      "address": "House 160, Aurangabad, Maharashtra",
+      "id": "user-160"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000160",
+      "address": "House 161, Pune, Maharashtra",
+      "id": "user-161"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000161",
+      "address": "House 162, Mumbai, Maharashtra",
+      "id": "user-162"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000162",
+      "address": "House 163, Nashik, Maharashtra",
+      "id": "user-163"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000163",
+      "address": "House 164, Solapur, Maharashtra",
+      "id": "user-164"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000164",
+      "address": "House 165, Satara, Maharashtra",
+      "id": "user-165"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000165",
+      "address": "House 166, Kolhapur, Maharashtra",
+      "id": "user-166"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000166",
+      "address": "House 167, Nagpur, Maharashtra",
+      "id": "user-167"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000167",
+      "address": "House 168, Aurangabad, Maharashtra",
+      "id": "user-168"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000168",
+      "address": "House 169, Pune, Maharashtra",
+      "id": "user-169"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000169",
+      "address": "House 170, Mumbai, Maharashtra",
+      "id": "user-170"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000170",
+      "address": "House 171, Nashik, Maharashtra",
+      "id": "user-171"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000171",
+      "address": "House 172, Solapur, Maharashtra",
+      "id": "user-172"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000172",
+      "address": "House 173, Satara, Maharashtra",
+      "id": "user-173"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000173",
+      "address": "House 174, Kolhapur, Maharashtra",
+      "id": "user-174"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000174",
+      "address": "House 175, Nagpur, Maharashtra",
+      "id": "user-175"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000175",
+      "address": "House 176, Aurangabad, Maharashtra",
+      "id": "user-176"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000176",
+      "address": "House 177, Pune, Maharashtra",
+      "id": "user-177"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000177",
+      "address": "House 178, Mumbai, Maharashtra",
+      "id": "user-178"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000178",
+      "address": "House 179, Nashik, Maharashtra",
+      "id": "user-179"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000179",
+      "address": "House 180, Solapur, Maharashtra",
+      "id": "user-180"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000180",
+      "address": "House 181, Satara, Maharashtra",
+      "id": "user-181"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000181",
+      "address": "House 182, Kolhapur, Maharashtra",
+      "id": "user-182"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000182",
+      "address": "House 183, Nagpur, Maharashtra",
+      "id": "user-183"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000183",
+      "address": "House 184, Aurangabad, Maharashtra",
+      "id": "user-184"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000184",
+      "address": "House 185, Pune, Maharashtra",
+      "id": "user-185"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000185",
+      "address": "House 186, Mumbai, Maharashtra",
+      "id": "user-186"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000186",
+      "address": "House 187, Nashik, Maharashtra",
+      "id": "user-187"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000187",
+      "address": "House 188, Solapur, Maharashtra",
+      "id": "user-188"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000188",
+      "address": "House 189, Satara, Maharashtra",
+      "id": "user-189"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000194",
+      "address": "House 195, Nashik, Maharashtra",
+      "id": "user-195"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000196",
+      "address": "House 197, Satara, Maharashtra",
+      "id": "user-197"
+    },
+    {
+      "name": "Sneha Joshi",
+      "mobile": "9000000197",
+      "address": "House 198, Kolhapur, Maharashtra",
+      "id": "user-198"
+    },
+    {
+      "name": "Aditya More",
+      "mobile": "9000000198",
+      "address": "House 199, Nagpur, Maharashtra",
+      "id": "user-199"
+    },
+    {
+      "name": "Kavya Shinde",
+      "mobile": "9000000199",
+      "address": "House 200, Aurangabad, Maharashtra",
+      "id": "user-200"
+    },
+    {
+      "name": "Aarav Sharma",
+      "mobile": "9000000200",
+      "address": "House 201, Pune, Maharashtra",
+      "id": "user-201"
+    },
+    {
+      "name": "Anaya Patil",
+      "mobile": "9000000201",
+      "address": "House 202, Mumbai, Maharashtra",
+      "id": "user-202"
+    },
+    {
+      "name": "Vivek Pawar",
+      "mobile": "9000000202",
+      "address": "House 203, Nashik, Maharashtra",
+      "id": "user-203"
+    },
+    {
+      "name": "Priya Deshmukh",
+      "mobile": "9000000203",
+      "address": "House 204, Solapur, Maharashtra",
+      "id": "user-204"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000204",
+      "address": "House 205, Satara, Maharashtra",
+      "id": "user-205"
+    },
+    {
+      "name": "Rohan Kulkarni",
+      "mobile": "9000000212",
+      "address": "House 213, Satara, Maharashtra",
+      "id": "user-213"
+    },
+    {
+      "name": "Vivek Bandu Pawar",
+      "mobile": "09890528006",
+      "address": "At Post Jainwadi, Tal. Pandharpur, Maharashtra – 413310, India",
+      "id": "hCWaHN8CEzI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

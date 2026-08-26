@@ -28,6 +28,31 @@ class FreqArrayEle{
 
 	// ele with the max freq
 
+	public static int[] maxFreq(int arr[], int n){
+		int maxf = Integer.MAX_VALUE;
+		int ele = 0;
+		boolean[] check = new boolean[n];
+
+		for(int i = 0; i < n; i++){
+			if(check[i]) continue;
+
+			int freq = 1;
+			for(int j = i + 1; j < n; j++){
+				if(arr[i] == arr[j]){
+					freq++;
+					check[j] = true;
+				}
+			}
+
+			if(freq > maxf){
+				maxf = freq;
+				ele = arr[i];
+			}
+		}
+
+		return new int[] {maxf, ele};
+	}
+
 	// ele with teh min freq
 
 	public static int[] minFreq(int arr[], int n){

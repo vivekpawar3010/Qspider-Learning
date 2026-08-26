@@ -36,4 +36,26 @@ dist-ssr
 *.class
 *.zip
 *.tar.gz
-*.rar  
+*.rar
+
+# Eclipse metadata and configurations
+.metadata/
+.recommenders/
+.settings/
+.gradle/
+bin/
+*.project
+*.classpath
+
+# Oracle Database Installer/Files
+sql/database/
+
+# Document formats
+*.pptx
+*.ppt
+
+# Local environment & temporary OS files
+.env
+.env.local
+.env.*.local
+Thumbs.db
