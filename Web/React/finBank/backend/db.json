@@ -1,0 +1,148 @@
+{
+  "admins": [
+    {
+      "id": "admin-1",
+      "username": "Super Admin",
+      "email": "admin@example.com",
+      "password": "admin123"
+    }
+  ],
+  "users": [
+    {
+      "id": "tbPDAXpbdfI",
+      "username": "Safal Arun Patil",
+      "usermobile": "7249667231",
+      "useremail": "safalp09@gmail.com",
+      "userpassword": "Safal@435"
+    },
+    {
+      "id": "epKDliEdRfU",
+      "username": "Mihir",
+      "usermobile": "0987654321",
+      "useremail": "mihir@gmail.com",
+      "userpassword": "Mihir@435"
+    },
+    {
+      "id": "jC6ykhg8qO4",
+      "username": "Vivek Bandu Pawar",
+      "usermobile": "9823456789",
+      "useremail": "vivekpawar932564@gmail.com",
+      "userpassword": "asdf"
+    },
+    {
+      "id": "pRo5FYQQMns",
+      "username": "Feature Programmer",
+      "usermobile": "9876543210",
+      "useremail": "featureprogrammer3010@gmail.com",
+      "userpassword": "king"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "NkKNv585B4M",
+      "userId": "tbPDAXpbdfI",
+      "accno": "8292549978628560",
+      "balance": 75000
+    },
+    {
+      "id": "KUiy5Lrdd0U",
+      "userId": "epKDliEdRfU",
+      "accno": "2510426417462712",
+      "balance": 45000
+    },
+    {
+      "id": "C-VhBha7fes",
+      "userId": "jC6ykhg8qO4",
+      "accno": "410810316518845479",
+      "balance": 120000
+    },
+    {
+      "id": "pqK1dihWUA0",
+      "userId": "pRo5FYQQMns",
+      "accno": "87102819769463296",
+      "balance": 0
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "userId": "tbPDAXpbdfI",
+      "accountId": "NkKNv585B4M",
+      "amount": 50000,
+      "type": "credit",
+      "description": "Monthly Salary"
+    },
+    {
+      "id": "2",
+      "userId": "tbPDAXpbdfI",
+      "accountId": "NkKNv585B4M",
+      "amount": 5000,
+      "type": "debit",
+      "description": "Grocery Shopping"
+    },
+    {
+      "id": "3",
+      "userId": "tbPDAXpbdfI",
+      "accountId": "NkKNv585B4M",
+      "amount": 20000,
+      "type": "debit",
+      "description": "Rent Payment"
+    },
+    {
+      "id": "4",
+      "userId": "epKDliEdRfU",
+      "accountId": "KUiy5Lrdd0U",
+      "amount": 30000,
+      "type": "credit",
+      "description": "Freelance Project"
+    },
+    {
+      "id": "5",
+      "userId": "epKDliEdRfU",
+      "accountId": "KUiy5Lrdd0U",
+      "amount": 9000,
+      "type": "debit",
+      "description": "Mobile Recharge"
+    },
+    {
+      "id": "6",
+      "userId": "epKDliEdRfU",
+      "accountId": "KUiy5Lrdd0U",
+      "amount": 15000,
+      "type": "debit",
+      "description": "Online Shopping"
+    },
+    {
+      "id": "7",
+      "userId": "jC6ykhg8qO4",
+      "accountId": "C-VhBha7fes",
+      "amount": 100000,
+      "type": "credit",
+      "description": "Bonus"
+    },
+    {
+      "id": "8",
+      "userId": "jC6ykhg8qO4",
+      "accountId": "C-VhBha7fes",
+      "amount": 25000,
+      "type": "debit",
+      "description": "Insurance Premium"
+    },
+    {
+      "id": "9",
+      "userId": "jC6ykhg8qO4",
+      "accountId": "C-VhBha7fes",
+      "amount": 12000,
+      "type": "debit",
+      "description": "Utility Bills"
+    },
+    {
+      "id": "10",
+      "userId": "jC6ykhg8qO4",
+      "accountId": "C-VhBha7fes",
+      "amount": 8000,
+      "type": "debit",
+      "description": "Dining Out"
+    }
+  ]
+}

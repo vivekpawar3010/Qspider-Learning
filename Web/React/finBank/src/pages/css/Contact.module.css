@@ -1,0 +1,123 @@
+/* Container - Balanced single view, zero scroll */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 52px 60px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* Top Section */
+.topSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tag {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #64748b;
+    text-transform: uppercase;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    color: #0f172a;
+    margin: 0;
+}
+
+/* Horizontal Interactive Buttons */
+.navRow {
+    display: flex;
+
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 16px;
+}
+
+.navBtn {
+    background: transparent;
+    border: none;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #64748b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.navBtn:hover {
+    color: #0f172a;
+    background-color: #f8fafc;
+}
+
+.activeNav {
+    color: #ffffff;
+    background-color: #0f172a;
+}
+
+.activeNav:hover {
+    color: #ffffff;
+    background-color: #0f172a;
+}
+
+/* Center Details */
+.detailsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 800px;
+    padding: 10px 0;
+}
+
+.deptTitle {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0;
+}
+
+.deptDesc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0;
+}
+
+.mainValue {
+    font-size: 34px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+    margin-top: 8px;
+}
+
+/* Bottom Footer Bar */
+.bottomBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 20px;
+}
+
+.statusBadge {
+    font-size: 14px;
+    font-weight: 700;
+    color: #00d284;
+}
+
+.metaInfo {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #94a3b8;
+}

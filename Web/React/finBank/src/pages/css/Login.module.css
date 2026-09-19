@@ -1,0 +1,249 @@
+/* Container: Ultra-fresh clean canvas with animated gradient background */
+.loginContainer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0d9488 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  padding: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card: Sleek floating card with clean micro-border and animations */
+.loginBox {
+  width: 100%;
+  max-width: 410px;
+  background: #ffffff;
+  border: 1px solid #edf2f7;
+  border-radius: 18px;
+  padding: 2.75rem 2.25rem;
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.02),
+    0 10px 30px -5px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  backdrop-filter: blur(10px);
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loginBox:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px -5px rgba(13, 148, 136, 0.15);
+}
+
+/* Title: Clean typography with animated accent bar */
+.title {
+  position: relative;
+  margin: 0 0 2rem 0;
+  color: #0f172a;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.03em;
+  animation: fadeInDown 0.6s ease 0.1s both;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 3px;
+  background: linear-gradient(90deg, #0d9488 0%, #06b6d4 100%);
+  border-radius: 2px;
+  animation: expandWidth 0.6s ease 0.3s both;
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 32px;
+  }
+}
+
+/* Form layout with staggered animations */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  width: 100%;
+}
+
+/* Inputs: Smooth animated field that brightens on active focus */
+.input {
+  width: 100%;
+  padding: 0.85rem 1.05rem;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  color: #0f172a;
+  font-size: 0.92rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeInLeft 0.6s ease forwards;
+}
+
+.input:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.input:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.input::placeholder {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  font-weight: 400;
+}
+
+.input:focus {
+  background: #ffffff;
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3.5px rgba(13, 148, 136, 0.12);
+  transform: scale(1.02);
+}
+
+/* Button: Modern gradient with glow effects */
+.loginButton {
+  margin-top: 0.6rem;
+  padding: 0.9rem 1.25rem;
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.94rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.2);
+  animation: fadeInUp 0.6s ease 0.4s both;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loginButton::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.loginButton:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.loginButton:hover {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  box-shadow: 0 8px 24px rgba(13, 148, 136, 0.35);
+  transform: translateY(-2px);
+}
+
+.loginButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.1);
+}
+
+/* Register link with animation */
+.registerLink {
+  margin-top: 1.6rem;
+  color: #64748b;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease 0.5s both;
+  position: relative;
+}
+
+.registerLink::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0d9488 0%, #06b6d4 100%);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.registerLink:hover {
+  color: #0d9488;
+}
+
+.registerLink:hover::after {
+  width: 100%;
+}

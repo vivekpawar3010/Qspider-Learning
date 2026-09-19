@@ -10,12 +10,22 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+target/
+out/
+test-output/
+surefire-reports/
+failsafe-reports/
+reports/
+screenshots/
 *.local
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+**/.vscode/
+.idea/
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
 .DS_Store
 *.suo
 *.ntvs*
@@ -46,6 +56,10 @@ dist-ssr
 bin/
 *.project
 *.classpath
+nbproject/private/
+nbbuild/
+nbdist/
+*.iml
 
 # Oracle Database Installer/Files
 sql/database/
@@ -58,4 +72,4 @@ sql/database/
 .env
 .env.local
 .env.*.local
-Thumbs.db
+Thumbs.db

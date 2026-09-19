@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "username": "Safal Arun Patil",
+      "usermobile": "7249667231",
+      "useremail": "safalp09@gmail.com",
+      "userpassword": "Safal@435",
+      "id": "tbPDAXpbdfI"
+    },
+    {
+      "username": "Mihir",
+      "usermobile": "0987654321",
+      "useremail": "mihir@gmail.com",
+      "userpassword": "Mihir@435",
+      "id": "epKDliEdRfU"
+    }
+  ],
+  "accounts": [
+    {
+      "userId": "tbPDAXpbdfI",
+      "accno": "8292549978628560",
+      "balance": 0,
+      "id": "NkKNv585B4M"
+    },
+    {
+      "userId": "epKDliEdRfU",
+      "accno": "2510426417462712",
+      "balance": 0,
+      "id": "KUiy5Lrdd0U"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "userId": "tbPDAXpbdfI",
+      "accountId": "NkKNv585B4M",
+      "amount": 5000,
+      "type": "credit",
+      "description": "Salary"
+    },
+    {
+      "userId": "epKDliEdRfU",
+      "accountId": "KUiy5Lrdd0U",
+      "amount": "9000",
+      "type": "Credit",
+      "description": "Gaming",
+      "id": "gvJaD-z80lM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

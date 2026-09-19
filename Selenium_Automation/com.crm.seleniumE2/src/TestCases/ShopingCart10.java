@@ -1,4 +1,4 @@
-package TestCases;
+	package TestCases;
 
 import java.awt.image.DirectColorModel;
 import java.util.List;

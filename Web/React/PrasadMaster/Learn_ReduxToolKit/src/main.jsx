@@ -65,12 +65,8 @@ let store = configureStore({
 console.log("store", store); 
 console.log(counterSlice.actions);
 console.log(SecondSliceMath.actions);
-export let actions1 = {
-    counterSlice.actions
-}
-export let actioin2 = {
-    SecondSliceMath.actions
-};
+export const actions1 = counterSlice.actions;
+export const actioin2 = SecondSliceMath.actions;
 
 createRoot(document.getElementById('root')).render(
     <Provider store={store}>

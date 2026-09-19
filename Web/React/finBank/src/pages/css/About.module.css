@@ -1,0 +1,110 @@
+/* Container - Flat 50/50 layout, zero scroll */
+.aboutWrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Left Section - 50% width, balanced spacing with larger typography */
+.textSection {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 56px 52px;
+    box-sizing: border-box;
+}
+
+/* Tag Header */
+.categoryTag {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #64748b;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 16px;
+}
+
+/* Big Main Title */
+.mainHeading {
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: #0f172a;
+    margin: 0 0 22px 0;
+}
+
+/* Sub-heading / Lead text */
+.leadText {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #1e293b;
+    margin: 0 0 20px 0;
+}
+
+/* Body Paragraph */
+.bodyText {
+    font-size: 17px;
+    line-height: 1.65;
+    color: #475569;
+    margin: 0 0 24px 0;
+}
+
+/* Action & Status Row */
+.actionRow {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-top: 16px;
+}
+
+.learnMoreBtn {
+    background-color: #0f172a;
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.learnMoreBtn:hover {
+    background-color: #1e293b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.15);
+}
+
+.statNotice {
+    font-size: 16px;
+    font-weight: 700;
+    color: #00d284;
+}
+
+/* Right Section - 50% width */
+.imageSection {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.heroImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}

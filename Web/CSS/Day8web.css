@@ -27,12 +27,12 @@ width: 200px;
 background-color: red;
 position: relative;
 left: 100px;
-transition: left 1s ease;
-    border: rgb(0, 0, 0) solid 2px;
-}
-#relative:hover{
-    left: 0px;
-}
+/* transition: left 1s ease; */
+    /* border: rgb(0, 0, 0) solid 2px; */
+/* } */
+/* #relative:hover{ */
+    /* left: 0px; */
+/* } */
 #absolute{
 height: 200px;
 width: 200px;

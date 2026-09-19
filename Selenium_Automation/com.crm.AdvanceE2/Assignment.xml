@@ -1,0 +1,19 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="1" name="Test">
+    <classes>
+      <class name="TestCases.TestCase001"/>  <!-- Verify Home Page URL -->
+      <class name="TestCases.TestCase002"/>  <!-- Verify Register Link -->
+      <class name="TestCases.TestCase003"/>  <!-- Verify Login Link -->
+      <class name="TestCases.TestCase004"/>  <!-- Verify Shopping Cart Link -->
+      <class name="TestCases.TestCase005"/>  <!-- Verify Wishlist Link -->
+      <class name="TestCases.TestCase006"/>  <!-- Verify Login Link Enabled -->
+      <class name="TestCases.TestCase007"/>  <!-- Invalid Login -->
+      <class name="TestCases.TestCase008"/>  <!-- Valid Login -->
+      <class name="TestCases.TestCase009"/>  <!-- Add Laptop to Cart -->
+      <class name="TestCases.TestCase010"/>  <!-- Remove Laptop from Cart -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

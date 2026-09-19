@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1" parallel="tests">
+  <test thread-count="50" name="Test" parallel="classes" >
+  <groups>
+  	<run>
+  		
+  		<exclude name="smock"></exclude>
+  	</run>
+  </groups>
+    <classes>
+      <class name="HomePage.CricketTeams"/>
+      <class name="Login.Bike3"/>
+      <class name="Login.Bike2"/>
+      <class name="SignUp.Car3"/>
+      <class name="Login.Bike1"/>
+      <class name="SignUp.Car12"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="50" name="Test2" parallel="classes" >
+  <groups>
+  	<run>
+  		<include name="smock"></include> 
+  		<!-- <exclude name="smock"></exclude> -->
+  	</run>
+  </groups>
+    <classes>
+      <class name="HomePage.CricketTeams"/>
+      <class name="Login.Bike3"/>
+      <class name="Login.Bike2"/>
+      <class name="SignUp.Car3"/>
+      <class name="Login.Bike1"/>
+      <class name="SignUp.Car12"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
