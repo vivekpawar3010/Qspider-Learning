@@ -3,6 +3,7 @@ package ArrayListPrograms;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.ListIterator;
+import java.util.Scanner;
 
 public class StudentDriver {
 
@@ -281,8 +282,8 @@ public class StudentDriver {
 		Student std1 = null;
 		Student std2 = null;
 
-		double max = Double.MIN_VALUE;
-		double smax = Double.MIN_VALUE;
+		double max = 0;
+		double smax = 0;
 
 		ListIterator<Student> lt = db.listIterator();
 
@@ -311,6 +312,15 @@ public class StudentDriver {
 	// 7) Sort the List based on the Marks
 	public static ArrayList<Student> sortOnMarks(ArrayList<Student> db) {
 
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your choise to use the use the method  \n 1. For List \n 2. For Iterator \n");
+		boolean choise  = (sc.next().equals("1"))? true:false;
+		
+		return choise? sortOnMarksList(db):sortOnMarksIterator(db);
+	}
+	
+	
+	public static ArrayList<Student> sortOnMarksList(ArrayList<Student> db) {
 		ArrayList<Student> list = new ArrayList<Student>(db);
 
 		for (int i = 0; i < list.size() - 1; i++) {
@@ -327,6 +337,18 @@ public class StudentDriver {
 				}
 			}
 		}
+
+		return list;
+	}
+	
+	public static ArrayList<Student> sortOnMarksIterator(ArrayList<Student> db){
+		ArrayList<Student> list = new ArrayList<Student>();
+		
+		ListIterator<Student> it = db.listIterator();
+		
+		while()
+
+		
 
 		return list;
 	}
